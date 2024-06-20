@@ -4,7 +4,7 @@ This directory contains the JSON schema definition for BluDoc, which defines the
 
 ## Schema File
 
-- **BluDoc_Schema_V1.4.0.json**: The schema file for BluDoc.
+- **bludoc_dchema_v1.4.0.json**: The schema file for BluDoc.
 
 ## Overview
 
