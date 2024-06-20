@@ -25,7 +25,7 @@ BluDoc is a simple, human-readable, AI-minded, open format to describe any busin
 
 ## Documentation
 
-For more details, visit our [documentation](https://github.com/yourusername/BluDoc/tree/main/docs)
+For more details, visit our [documentation](https://github.com/blumatix/BluDoc/tree/main/docs)
 
 ## Contact
 
