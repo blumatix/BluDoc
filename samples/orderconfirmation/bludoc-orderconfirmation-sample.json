@@ -1,0 +1,843 @@
+{
+    "BluDoc.Version": "1.4.0",
+    "Created.DateTime": "2024-04-24T11:56:17.9108554+00:00",
+    "CreatorSoftware.Name": "Orderconfirmation service",
+    "CreatorSoftware.Version": "1.0.0",
+    "Document.Languages": [
+      "en"
+    ],
+    "Document.Type": "OrderConfirmation",
+    "DocumentEssentials": [
+      {
+        "Confidence": 1.0000,
+        "ConfidenceThreshold": -1,
+        "Label": "OrderConfirmation.Id",
+        "Location": {
+          "Height": 45,
+          "Left": 1137,
+          "Page": 1,
+          "Top": 1142,
+          "Width": 214
+        },
+        "Text": "123456",
+        "Value": "123456"
+      },
+      {
+        "Confidence": 1.0000,
+        "ConfidenceThreshold": -1,
+        "Label": "OrderConfirmation.Date",
+        "Location": {
+          "Height": 36,
+          "Left": 2006,
+          "Page": 1,
+          "Top": 842,
+          "Width": 225
+        },
+        "Text": "05.10.2023",
+        "Value": "2023-10-05"
+      },
+      {
+        "Confidence": 0.9962,
+        "ConfidenceThreshold": -1,
+        "Label": "ReceiverOrder.Id",
+        "Location": {
+          "Height": 33,
+          "Left": 735,
+          "Page": 1,
+          "Top": 1563,
+          "Width": 222
+        },
+        "Text": "1100105123",
+        "Value": "1100105123"
+      },
+      {
+        "Confidence": 1.0000,
+        "ConfidenceThreshold": -1,
+        "Label": "Currency",
+        "Text": "EUR",
+        "Value": "EUR"
+      },
+      {
+        "Confidence": 0,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Delivery.Date",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "DeliveryPeriodStart.Date",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "DeliveryPeriodEnd.Date",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "DeliveryDate.Item",
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Surcharge.Type",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Surcharge.Rate",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Surcharge.Amount",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Surcharge.Item",
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0.8202203512191772,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0.8681,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Name",
+            "Location": {
+              "Height": 45,
+              "Left": 1696,
+              "Page": 1,
+              "Top": 314,
+              "Width": 557
+            },
+            "Text": "Blumatix Intelligence GmbH",
+            "Value": "Blumatix Intelligence GmbH"
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Attention.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9474,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Street",
+            "Location": {
+              "Height": 37,
+              "Left": 1900,
+              "Page": 1,
+              "Top": 377,
+              "Width": 355
+            },
+            "Text": "Schwarzstraße 48",
+            "Value": "Schwarzstraße 48"
+          },
+          {
+            "Confidence": 0.9299,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.ZipCode",
+            "Location": {
+              "Height": 36,
+              "Left": 1970,
+              "Page": 1,
+              "Top": 441,
+              "Width": 97
+            },
+            "Text": "5020",
+            "Value": "5020"
+          },
+          {
+            "Confidence": 0.8998,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.City",
+            "Location": {
+              "Height": 45,
+              "Left": 2083,
+              "Page": 1,
+              "Top": 441,
+              "Width": 171
+            },
+            "Text": "Salzburg",
+            "Value": "Salzburg"
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Region",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Country",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Website",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Email",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Phone",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Sender.Contact.Item",
+        "Location": {
+          "Height": 178,
+          "Left": 1695,
+          "Page": 1,
+          "Top": 323,
+          "Width": 581
+        },
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0.8562852144241333,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0.9221,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Name",
+            "Location": {
+              "Height": 38,
+              "Left": 284,
+              "Page": 1,
+              "Top": 680,
+              "Width": 426
+            },
+            "Text": "Max Mustermann",
+            "Value": "Max Mustermann"
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Attention.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9853,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Street",
+            "Location": {
+              "Height": 41,
+              "Left": 282,
+              "Page": 1,
+              "Top": 748,
+              "Width": 414
+            },
+            "Text": "Schwarzstraße 46",
+            "Value": "Schwarzstraße 46"
+          },
+          {
+            "Confidence": 0.984,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.ZipCode",
+            "Location": {
+              "Height": 39,
+              "Left": 282,
+              "Page": 1,
+              "Top": 821,
+              "Width": 114
+            },
+            "Text": "5020",
+            "Value": "5020"
+          },
+          {
+            "Confidence": 0.9738,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.City",
+            "Location": {
+              "Height": 51,
+              "Left": 412,
+              "Page": 1,
+              "Top": 819,
+              "Width": 198
+            },
+            "Text": "Salzburg",
+            "Value": "Salzburg"
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Region",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9915,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Country",
+            "Location": {
+              "Height": 47,
+              "Left": 282,
+              "Page": 1,
+              "Top": 884,
+              "Width": 242
+            },
+            "Text": "Österreich",
+            "Value": "AT"
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Website",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Email",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Phone",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Receiver.Contact.Item",
+        "Location": {
+          "Height": 261,
+          "Left": 280,
+          "Page": 1,
+          "Top": 689,
+          "Width": 465
+        },
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Attention.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Street",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.ZipCode",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.City",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Region",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Country",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Website",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Email",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Phone",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Delivery.Contact.Item",
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0,
+        "ConfidenceThreshold": -1,
+        "Items": [
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Attention.Name",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Street",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.ZipCode",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.City",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Region",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Country",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Website",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Email",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0,
+            "ConfidenceThreshold": -1,
+            "Label": "Contact.Phone",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Invoice.Contact.Item",
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0.8563929796218872,
+        "ConfidenceThreshold": 0,
+        "Items": [
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Position.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Article.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.978501272201538,
+            "ConfidenceThreshold": 0,
+            "Label": "ArticleDescription.String",
+            "Location": {
+              "Height": 84,
+              "Left": 320,
+              "Page": 1,
+              "Top": 2172,
+              "Width": 1040
+            },
+            "Text": "Quota for 10 Days of Development / Data Science efforts",
+            "Value": "Quota for 10 Days of Development / Data Science efforts"
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Quantity.Decimal",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Unit.SmallAmount",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9821762442588806,
+            "ConfidenceThreshold": 0,
+            "Label": "Total.Amount",
+            "Location": {
+              "Height": 40,
+              "Left": 2094,
+              "Page": 1,
+              "Top": 2173,
+              "Width": 125
+            },
+            "Text": "600,00",
+            "Value": "600.00"
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Order.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "DeliveryNote.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Unit.Type",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Vat.Rate",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Items": [
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Delivery.Date",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "DeliveryPeriod.StartDate",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "DeliveryPeriod.EndDate",
+                "Text": "",
+                "Value": ""
+              }
+            ],
+            "Label": "DeliveryDate.Item",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Items": [
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Discount.Amount",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Discount.Rate",
+                "Text": "",
+                "Value": ""
+              }
+            ],
+            "Label": "Discount.Item",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Article.Type",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Line.Item",
+        "Location": {
+          "Height": 84,
+          "Left": 320,
+          "Page": 1,
+          "Top": 2172,
+          "Width": 1899
+        },
+        "Text": "",
+        "Value": ""
+      },
+      {
+        "Confidence": 0.361246258020401,
+        "ConfidenceThreshold": 0,
+        "Items": [
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Position.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Article.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9890303611755371,
+            "ConfidenceThreshold": 0,
+            "Label": "ArticleDescription.String",
+            "Location": {
+              "Height": 33,
+              "Left": 322,
+              "Page": 1,
+              "Top": 2280,
+              "Width": 393
+            },
+            "Text": "New Invoice Detail",
+            "Value": "New Invoice Detail"
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Quantity.Decimal",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Unit.SmallAmount",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 0.9814498424530029,
+            "ConfidenceThreshold": 0,
+            "Label": "Total.Amount",
+            "Location": {
+              "Height": 40,
+              "Left": 2094,
+              "Page": 1,
+              "Top": 2280,
+              "Width": 125
+            },
+            "Text": "100,00",
+            "Value": "100.00"
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Order.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "DeliveryNote.Id",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Unit.Type",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Vat.Rate",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Items": [
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Delivery.Date",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "DeliveryPeriod.StartDate",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "DeliveryPeriod.EndDate",
+                "Text": "",
+                "Value": ""
+              }
+            ],
+            "Label": "DeliveryDate.Item",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Items": [
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Discount.Amount",
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "ConfidenceThreshold": 0,
+                "Label": "Discount.Rate",
+                "Text": "",
+                "Value": ""
+              }
+            ],
+            "Label": "Discount.Item",
+            "Text": "",
+            "Value": ""
+          },
+          {
+            "Confidence": 1,
+            "ConfidenceThreshold": 0,
+            "Label": "Article.Type",
+            "Text": "",
+            "Value": ""
+          }
+        ],
+        "Label": "Line.Item",
+        "Location": {
+          "Height": 41,
+          "Left": 322,
+          "Page": 1,
+          "Top": 2279,
+          "Width": 1897
+        },
+        "Text": "",
+        "Value": ""
+      }
+    ],
+    "DocumentProvider.Name": "blumatix",
+    "Pages": [
+      {
+        "Dpi": 300,
+        "Height": 3508,
+        "Id": 1,
+        "Width": 2480
+      }
+    ]
+  }
