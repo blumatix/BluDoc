@@ -16,28 +16,35 @@ The BluDoc schema provides a standardized format for defining documents. It ensu
 
 You can use the BluDoc schema to validate documents. Here's a basic example using Python with the `jsonschema` library:
 
-1. **Install jsonschema**:
-   ```sh
-   pip install jsonschema
-
-2. **Validate a document**:
+```python
 import json
 from jsonschema import validate, ValidationError
 
-# Load the schema
-with open('schema/bludoc_schema.json') as schema_file:
-    schema = json.load(schema_file)
+# Load the JSON schema from a file
+try:
+    with open('path/to/your/bludoc-schema_v1.4.0.json') as schema_file:
+        schema = json.load(schema_file)
+except FileNotFoundError:
+    print("Schema file not found. Please check the path.")
+    exit()
 
-# Load a document to validate
-with open('samples/sample1.json') as doc_file:
-    document = json.load(doc_file)
+# Load the JSON document to be validated from a file
+try:
+    with open('path/to/your/bludoc.json') as doc_file:
+        document = json.load(doc_file)
+except FileNotFoundError:
+    print("Document file not found. Please check the path.")
+    exit()
 
-# Validate the document
+# Validate the JSON document against the schema
 try:
     validate(instance=document, schema=schema)
     print("Document is valid.")
 except ValidationError as e:
     print("Document is invalid:", e.message)
+except Exception as e:
+    print("An unexpected error occurred:", str(e))
+```
 
 ## References
 
