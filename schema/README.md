@@ -2,13 +2,25 @@
 
 This directory contains the JSON schema definition for BluDoc, which defines the structure, content, and constraints of BluDoc documents.
 
-## Schema File
+## Schema Files
 
-- **bludoc_schema_v1.1.0.json**: The schema file for BluDoc.
+- **BluDoc_Schema_V1.4.2.json**: The latest schema file for BluDoc with enhanced invoice fields for accounting, payment processing, and delivery management.
+- **BluDoc_Schema_V1.4.1.json**: Previous schema version.
+- **bludoc-schema_v1.4.0.json**: Legacy schema version.
 
 ## Overview
 
 The BluDoc schema provides a standardized format for defining documents. It ensures that documents are structured correctly and consistently, making it easier to create, validate, and process them across different implementations.
+
+### Version 1.4.2 Enhancements
+
+The latest version (1.4.2) includes significant enhancements for invoice document processing:
+
+- **Enhanced Accounting Fields**: Added `AccountingEntry.Item` with mandatory `AccountingText.String` for business categorization
+- **Payment Processing**: New fields for `PaymentStatus.Type`, `PaymentMethod.Type`, and `Payment.Amount`
+- **Referenced Documents**: Support for `ReferencedInvoice.Id` to link credit notes and related documents
+- **Delivery Management**: Complete `Delivery.Contact.Item` structure for separate delivery addresses
+- **Improved Validation**: Enhanced field descriptions and validation rules for invoice-specific data
 
 ## Usage
 
@@ -22,7 +34,7 @@ from jsonschema import validate, ValidationError
 
 # Load the JSON schema from a file
 try:
-    with open('path/to/your/bludoc-schema_v1.4.0.json') as schema_file:
+    with open('path/to/your/BluDoc_Schema_V1.4.2.json') as schema_file:
         schema = json.load(schema_file)
 except FileNotFoundError:
     print("Schema file not found. Please check the path.")

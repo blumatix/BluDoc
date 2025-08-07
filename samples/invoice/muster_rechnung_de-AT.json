@@ -1,5 +1,5 @@
 {
-    "BluDoc.Version": "1.4.0",
+    "BluDoc.Version": "1.4.2",
     "Created.DateTime": "2025-02-13T12:16:48.3961735+00:00",
     "CreatorSoftware.Name": "Blumatix.BluDocConverter.Business.ApiResponse.ApiResponseConverter",
     "CreatorSoftware.Version": "2.0.0.0",
@@ -189,6 +189,57 @@
             "Location": null,
             "Text": null,
             "Value": null
+        },
+        {
+            "Confidence": 0.90,
+            "Items": null,
+            "Label": "ReferencedInvoice.Id",
+            "Location": null,
+            "Text": "",
+            "Value": ""
+        },
+        {
+            "Confidence": 0.95,
+            "ConfidenceThreshold": -1,
+            "Items": [
+                {
+                    "Confidence": 0.95,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "AccountingText.String",
+                    "Location": null,
+                    "Text": "IT-Services",
+                    "Value": "IT-Services"
+                }
+            ],
+            "Label": "AccountingEntry.Item",
+            "Location": null,
+            "Text": "",
+            "Value": ""
+        },
+        {
+            "Confidence": 0.85,
+            "Items": null,
+            "Label": "PaymentStatus.Type",
+            "Location": null,
+            "Text": "Open",
+            "Value": "Open"
+        },
+        {
+            "Confidence": 0.90,
+            "Items": null,
+            "Label": "PaymentMethod.Type",
+            "Location": null,
+            "Text": "Bank_Transfer",
+            "Value": "Bank_Transfer"
+        },
+        {
+            "Confidence": 0.95,
+            "Items": null,
+            "Label": "Payment.Amount",
+            "Location": null,
+            "Text": "2.380,00",
+            "Value": "2380.00"
         },
         {
             "Confidence": 0.99,
@@ -795,6 +846,106 @@
             "Location": null,
             "Text": null,
             "Value": null
+        },
+        {
+            "Confidence": 0.80,
+            "ConfidenceThreshold": -1,
+            "Items": [
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Attention.Name",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Street",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.ZipCode",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.City",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Region",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Country",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Website",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Email",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                },
+                {
+                    "Confidence": 0.80,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Contact.Phone",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                }
+            ],
+            "Label": "Delivery.Contact.Item",
+            "Location": null,
+            "Text": "",
+            "Value": ""
         }
     ],
     "DocumentProvider.Name": "Blumatix.Capture.Website",
