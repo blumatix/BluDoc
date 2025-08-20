@@ -1,0 +1,421 @@
+{
+	"BluDoc.Version": "1.4.2",
+	"Created.DateTime": "2025-08-20T10:37:16.7733797+02:00",
+	"CreatorSoftware.Name": "document",
+	"CreatorSoftware.Version": "0.1.0",
+	"Document.Languages": [
+		"de"
+	],
+	"Document.Type": "Order",
+	"DocumentEssentials": [
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Label": "Order.Id",
+			"Text": "123456",
+			"Value": "123456"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Label": "Order.Date",
+			"Text": "02.05.2025",
+			"Value": "2025-05-02"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Label": "Sender.Id",
+			"Text": "1000030 000",
+			"Value": "1000030 000"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Label": "Receiver.Id",
+			"Text": "1234",
+			"Value": "1234"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Label": "Sender.VatId",
+			"Text": "ATU12345678",
+			"Value": "ATU12345678"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Name",
+					"Text": "Blumatix Intelligence GmbH",
+					"Value": "Blumatix Intelligence GmbH"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Attention.Name",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Street",
+					"Text": "Schwarzstraße 48",
+					"Value": "Schwarzstraße 48"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.ZipCode",
+					"Text": "5020",
+					"Value": "5020"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.City",
+					"Text": "Salzburg",
+					"Value": "Salzburg"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Region",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Country",
+					"Text": "Austria",
+					"Value": "AT"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Website",
+					"Text": "www.blumatix.com",
+					"Value": "https://blumatix.com"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Email",
+					"Text": "office@blumatix.com",
+					"Value": "office@blumatix.com"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Phone",
+					"Text": "+43 662 243410",
+					"Value": "+43662243410"
+				}
+			],
+			"Label": "Sender.Contact.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "ReceiverArticle.Id",
+					"Text": "100.010.0001",
+					"Value": "100.010.0001"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Article.Id",
+					"Text": "84526",
+					"Value": "84526"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Quantity.Decimal",
+					"Text": "10",
+					"Value": "10"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Unit.Type",
+					"Text": "Stück",
+					"Value": "Stück"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Unit.SmallAmount",
+					"Text": "20",
+					"Value": "20.0000"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Items": [
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Date",
+							"Text": "05.05.2025",
+							"Value": "2025-05-05"
+						}
+					],
+					"Label": "DeliveryDate.Item"
+				}
+			],
+			"Label": "Line.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "ReceiverArticle.Id",
+					"Text": "202.305.202",
+					"Value": "202.305.202"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Article.Id",
+					"Text": "75468",
+					"Value": "75468"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Quantity.Decimal",
+					"Text": "10",
+					"Value": "10"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Unit.Type",
+					"Text": "Stück",
+					"Value": "Stück"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Unit.SmallAmount",
+					"Text": "30",
+					"Value": "30.0000"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Items": [
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Date",
+							"Text": "05.05.2025",
+							"Value": "2025-05-05"
+						}
+					],
+					"Label": "DeliveryDate.Item"
+				}
+			],
+			"Label": "Line.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Delivery.Date",
+					"Text": "05.05.2025",
+					"Value": "2025-05-05"
+				}
+			],
+			"Label": "DeliveryDate.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Delivery.Date",
+					"Text": "10.05.2025",
+					"Value": "2025-05-10"
+				}
+			],
+			"Label": "DeliveryDate.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Name",
+					"Text": "Blumatix Intelligence GmbH",
+					"Value": "Blumatix Intelligence GmbH"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Attention.Name",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Street",
+					"Text": "Schwarzstr. 40",
+					"Value": "Schwarzstr. 40"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.ZipCode",
+					"Text": "5020",
+					"Value": "5020"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.City",
+					"Text": "Salzburg",
+					"Value": "Salzburg"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Region",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Country",
+					"Text": "Austria",
+					"Value": "AT"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Website",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Email",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Phone",
+					"Text": "",
+					"Value": ""
+				}
+			],
+			"Label": "Delivery.Contact.Item"
+		},
+		{
+			"Confidence": 0.85,
+			"ConfidenceThreshold": -1,
+			"Items": [
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Name",
+					"Text": "Blumatix Intelligence GmbH",
+					"Value": "Blumatix Intelligence GmbH"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Attention.Name",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Street",
+					"Text": "Schwarzstr. 48",
+					"Value": "Schwarzstr. 48"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.ZipCode",
+					"Text": "5020",
+					"Value": "5020"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.City",
+					"Text": "Salzburg",
+					"Value": "Salzburg"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Region",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Country",
+					"Text": "Austria",
+					"Value": "AT"
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Website",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Email",
+					"Text": "",
+					"Value": ""
+				},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Label": "Contact.Phone",
+					"Text": "",
+					"Value": ""
+				}
+			],
+			"Label": "Invoice.Contact.Item"
+		}
+	],
+	"DocumentProvider.Name": "blumatix",
+	"DocumentTexts": "Omitted",
+	"DocumentBinaries": null
+}
