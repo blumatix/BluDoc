@@ -1,0 +1,293 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://schemas.blumatix.com/bludelta/bludoc/v1.4.1/schema.json",
+    "title": "BluDoc Schema",
+    "description": "BluDoc is a multi-layer document description format enabling exchange with AI in mind",
+    "$ref": "#/definitions/BluDoc",
+    "definitions": {
+      "BluDoc": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "BluDoc.Version": {
+            "type": "string",
+            "description": "The version of the BluDoc format."
+          },
+          "DocumentProvider.Name": {
+            "type": "string",
+            "description": "The name of the document provider."
+          },
+          "Created.DateTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time when the document was created."
+          },
+          "CreatorSoftware.Name": {
+            "type": "string",
+            "description": "The name of the software used to create the document."
+          },
+          "CreatorSoftware.Version": {
+            "type": "string",
+            "description": "The version of the software used to create the document."
+          },
+          "Document.Type": {
+            "type": "string",
+            "description": "The type of the document."
+          },
+          "Document.Languages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z]{2}$"
+            },
+            "description": "The list of languages used in the document, represented by their ISO 639-1 codes"
+          },
+          "Pages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Page"
+            },
+            "description": "An array of pages in the document."
+          },
+          "DocumentEssentials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/DocumentEssential"
+            },
+            "description": "An array of essential document details."
+          },
+          "DocumentTexts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Line": {
+                  "$ref": "#/definitions/Line"
+                }
+              },
+              "required": [ "Line" ]
+            },
+            "description": "An array of lines of text in the document.",
+            "additionalProperties": false,
+            "title": "LineWrapper"
+          },
+          "DocumentBinaries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/DocumentBinary"
+            },
+            "description": "An array of binary representation of the document."
+          }
+        },
+        "required": [
+          "BluDoc.Version",
+          "Created.DateTime",
+          "DocumentProvider.Name",
+          "Document.Type"
+        ],
+        "title": "BluDoc",
+        "description": "The root object representing a BluDoc document."
+      },
+      "DocumentEssential": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Label": {
+            "type": "string",
+            "description": "The label of the document essential."
+          },
+          "Value": {
+            "type": [ "string", "null" ],
+            "description": "The value of the document essential, if applicable."
+          },
+          "Text": {
+            "type": [ "string", "null" ],
+            "description": "The text representation of the document essential, if applicable."
+          },
+          "Location": {
+            "type": [ "null", "object" ],
+            "$ref": "#/definitions/Location",
+            "description": "The location details of the document essential, if applicable."
+          },
+          "Confidence": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1,
+            "description": "The confidence level (0.0-1.0) associated with the document essential. Score of -1 indicates no confidence score."
+          },
+          "ConfidenceThreshold": {
+            "type": "number",
+            "description": "The threshold value used to determine the confidence level."
+          },
+          "Items": {
+            "type": [ "array", "null" ],
+            "items": {
+              "$ref": "#/definitions/DocumentEssential"
+            },
+            "description": "An array of sub-items representing additional document essentials, if applicable."
+          }
+        },
+        "required": [
+          "Label"
+        ],
+        "title": "DocumentEssential"
+      },
+      "DocumentBinary": {
+        "type": "object",
+        "properties": {
+          "ContentType": {
+            "type": "string",
+            "description": "Describes the nature or purpose of the binary content, specifying how the content is intended to be used or its format characteristics."
+          },
+          "MediaType": {
+            "type": "string",
+            "description": "The media type of the binary content, e.g., image/png or application/pdf."
+          },
+          "FileName": {
+            "type": "string",
+            "description": "The file name of the content, e.g., attachment1.pdf"
+          },
+          "Name": {
+            "type": "string",
+            "description": "The name of the content, e.g., attachment1"
+          },
+          "Embedding": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "An array of Base64 encoded data strings. For multi-page images, each page is represented as a separate Base64 encoded string. For PDFs, the entire document, regardless of page count, is represented by a single Base64 encoded string."
+          },
+          "Reference": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            },
+            "description": "URL references to the binary content."
+          }
+        },
+        "required": [ "ContentType", "MediaType" ],
+        "oneOf": [
+          {
+            "required": [ "Embedding" ]
+          },
+          {
+            "required": [ "Reference" ]
+          }
+        ]
+      },
+      "Line": {
+        "type": "object",
+        "properties": {
+          "Text": {
+            "type": "string",
+            "description": "The concatenated text of all words in the line."
+          },
+          "Location": {
+            "type": "object",
+            "$ref": "#/definitions/Location",
+            "description": "The location details of the line."
+          },
+          "Words": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Word"
+            },
+            "description": "The individual words within the line."
+          }
+        },
+        "required": [ "Text", "Location", "Words" ],
+        "title": "Line"
+      },
+      "Word": {
+        "type": "object",
+        "properties": {
+          "Text": {
+            "type": "string",
+            "description": "The text of the word."
+          },
+          "Location": {
+            "type": "object",
+            "$ref": "#/definitions/Location",
+            "description": "The location details of the word."
+          }
+        },
+        "required": [ "Text", "Location" ],
+        "title": "Word"
+      },
+      "Location": {
+        "type": [ "object", "null" ],
+        "additionalProperties": false,
+        "properties": {
+          "Page": {
+            "type": "integer",
+            "description": "The page number where the element is located."
+          },
+          "Left": {
+            "type": "integer",
+            "description": "The position of the element from the left on the page in pixels."
+          },
+          "Top": {
+            "type": "integer",
+            "description": "The position of the element from the top on the page in pixels."
+          },
+          "Width": {
+            "type": "integer",
+            "description": "The width of the element in pixels."
+          },
+          "Height": {
+            "type": "integer",
+            "description": "The height of the element in pixels."
+          }
+        },
+        "required": [
+          "Left",
+          "Top",
+          "Width",
+          "Height",
+          "Page"
+        ],
+        "title": "Location"
+      },
+      "Page": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "description": "The page number.",
+            "minimum": 1
+          },
+          "Width": {
+            "type": "integer",
+            "description": "The width of the page in pixels."
+          },
+          "Height": {
+            "type": "integer",
+            "description": "The height of the page in pixels."
+          },
+          "Dpi": {
+            "type": "integer",
+            "description": "The dots per inch (DPI) of the page."
+          },
+          "Orientation": {
+            "type": "string",
+            "description": "The orientation of the page (e.g., Portrait or Landscape).",
+            "enum": [ "Portrait", "Landscape" ]
+          },
+          "AppliedRotationDegreesClockwise": {
+            "type": "integer",
+            "description": "The rotation applied to the page in degrees clockwise."
+          }
+        },
+        "required": [
+          "Width",
+          "Height",
+          "Dpi",
+          "Id"
+        ],
+        "title": "Page"
+      }
+    }
+  }
