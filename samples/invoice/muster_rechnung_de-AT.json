@@ -420,7 +420,7 @@
             "Confidence": 0.0,
             "ConfidenceThreshold": -1.0,
             "Items": null,
-            "Label": "ReceiverTax.Id",
+            "Label": "Receiver.TaxId",
             "Location": null,
             "Text": "",
             "Value": ""

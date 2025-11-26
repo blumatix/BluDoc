@@ -86,6 +86,7 @@ Alternative groupings may be equally valid, and the structure can be modified or
 | **Timestamp** | Date and time with timezone | `YYYY-MM-DDTHH:mm:ss.sss±hhmm` | ISO 8601 datetime ([link](https://en.wikipedia.org/wiki/ISO_8601)) | `12.03.2025 14:33 CET → "2025-03-12T14:33:00.000+0100"` | `Created.Timestamp` | — |
 | **Duration** | Time duration | Integer | Unit must be specified in detail name (Days/Hours) | `30 days → "30"`<br>`2 hours → "2"` | `DueDays.Duration`, `WorkingHours.Duration` | Unit: days or hours |
 | **Mileage** | Vehicle mileage or odometer reading | Integer | Numeric value without unit | `45,000 km → "45000"`<br>`12.500 km → "12500"`<br>`8000 miles → "8000"` | `Vehicle.Mileage`, `Odometer.Mileage` | Unit: km (or miles, context-dependent) |
+| **Week** | Calendar week (ISO 8601) | `YYYY-Www` | ISO 8601 format (week starts on Monday, week 1 is the week with the first Thursday of the year) | `KW 28/2025 → "2025-W28"`<br>`KW 32.25 → "2025-W32"`<br>`2025-W05 → "2025-W05"` | `Delivery.Week` | — |
 
 ---
 
