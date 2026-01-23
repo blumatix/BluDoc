@@ -1,32 +1,58 @@
 # BluDoc
 
-<img src="./docs/images/BluDoc.png" alt="BluDoc Logo" width="200"/>
+BluDoc is a human-readable, AI-minded format to describe any business document.
+Use the schema files and samples in this repo to validate and explore BluDoc.
 
-BluDoc is a simple, human-readable, AI-minded, open format to describe any business document. The aim is to simplify and unify the document data exchange between business services.
+## Samples
+- [classification](samples/classification)
+- [invoice](samples/invoice)
+- [order](samples/order)
+- [orderconfirmation](samples/orderconfirmation)
+- [quotation](samples/quotation)
+- [timesheet](samples/timesheet)
 
-## Features
+## Document Essentials
+- [BankStatement](docs/document-essentials/bankstatement-documentessentials.md)
+- [DeliveryNote](docs/document-essentials/deliverynote-documentessentials.md)
+- [DirectDebitMandate](docs/document-essentials/directdebitmandate-documentessentials.md)
+- [Invoice](docs/document-essentials/invoice-documentessentials.md)
+- [Order](docs/document-essentials/order-documentessentials.md)
+- [OrderConfirmation](docs/document-essentials/orderconfirmation-documentessentials.md)
+- [Timesheet](docs/document-essentials/timesheet-documentessentials.md)
 
-- Standardized JSON schemas for document definitions
-- Supports multiple document layers like pixels, texts, entities and common essential infos
-- describes context, format and contents of a single document
-- includes attributes facilitating AI model outputs and trainings
-- is easy to read
-- provides a generic schema for any document and pre-defined schemas for general business documents like e.g. invoices, etc.
-- defines basic data types and normalization of related values
-- can be extended and customized as needed
-- Samples for various use cases
+## Schemas
+- [BluDoc_Schema_V1.0.0.json](schema/BluDoc_Schema_V1.0.0.json)
+- [BluDoc_Schema_V1.1.0.json](schema/BluDoc_Schema_V1.1.0.json)
+- [BluDoc_Schema_V1.2.0.json](schema/BluDoc_Schema_V1.2.0.json)
+- [BluDoc_Schema_V1.3.0.json](schema/BluDoc_Schema_V1.3.0.json)
+- [BluDoc_Schema_V1.3.1.json](schema/BluDoc_Schema_V1.3.1.json)
+- [BluDoc_Schema_V1.4.0.json](schema/BluDoc_Schema_V1.4.0.json)
+- [BluDoc_Schema_V1.4.1.json](schema/BluDoc_Schema_V1.4.1.json)
+- [BluDoc_Schema_V1.4.2.json](schema/BluDoc_Schema_V1.4.2.json)
+- [BluDoc_Schema_V1.5.0.json](schema/BluDoc_Schema_V1.5.0.json)
 
-## Usage
+## Basic Principles
 
-### JSON Schemas
+## Generic
+BluDoc defines a basic, generic structure that can describe any digital document.
 
-- Browse the `schemas` directory to find the available JSON schemas.
-- Use the `samples` directory to see example documents based on the schemas.
+## One BluDoc per Document
+One BluDoc represents one document. A BluDoc description of a PDF file containing e.g. an invoice and a delivery note requires **two** BluDoc JSONs to describe both documents.
 
-## Documentation
+If a file contains multiple documents which belong together (e.g. invoice and delivery note), those additional documents could be handled as “attachments” in the future.
 
-For more details, visit our [documentation](https://github.com/blumatix/BluDoc/tree/main/docs)
+## Supports Common Business Documents
+Additionally, BluDoc provides pre-defined **DocumentEssentials** schemas for common business documents to ease data exchange (e.g. universal schema for invoices, quotations, etc.).
 
-## Contact
+## Concise, Readable
+BluDoc content and structure is easy to read and understand.
 
-For any questions, please open an issue.
+## Optional
+BluDoc provides a structure. To what extent you use it is up to you; the JSON schema includes mainly optional elements.
+
+## Redundancy is ok
+For human readability and ease of processing, information within different elements of BluDoc can be redundant, but it must be consistent.
+
+## Docs
+- [Datatypes & normalization](docs/BluDoc%20Datatypes%20and%20Normalization.md)
+

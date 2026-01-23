@@ -1,138 +1,60 @@
 # BluDoc Datatypes and Normalization
 
-## 1. Introduction
+## Introduction
 
-Datatypes define the semantic nature of extracted details in BluDoc.  
-They ensure consistent normalization, validation, and interpretation across all document types and enable LLM-based extraction models to produce structured, machine-processable results.
+Datatypes define the semantic nature of extracted details in BluDoc.
+They ensure consistent normalization, validation, and interpretation across all document types.
 
-### Why Datatypes Matter
+### Why datatypes matter
 
-Datatypes play a central role in BluDoc because they link semantic meaning with machine-readability.  
-Each detail extracted from a document is not only identified by name but also by its datatype, which provides the following advantages:
+- **Improved extraction quality**: When prompts include datatype information, models better understand the expected value domain and output format.
+- **Centralized normalization**: Each datatype defines one normalization rule (e.g. Date → `YYYY-MM-DD`, Amount → decimal with `.` separator).
+- **Automated post-processing**: Downstream systems can rely on normalized values for comparison, validation, and aggregation.
+- **Clear naming**: The datatype is the final segment of a detail identifier (e.g. `Invoice.Date`, `GrandTotal.Amount`, `Account.Iban`).
+- **Extensibility**: Datatypes are defined once and reused across doctypes.
 
-- **Improved LLM extraction quality** —  
-  When the extraction prompt includes datatype information, language models better understand the expected structure and value domain.  
-  They can distinguish between similar details (e.g., `Invoice.Date` vs. `Delivery.Date`) and output results in normalized formats.
+### Hierarchical details: the `Item` datatype
 
-- **Centralized normalization** —  
-  Each datatype defines one normalization rule (e.g., `Date → YYYY-MM-DD`, `Amount → decimal with '.' separator`).  
-  This ensures consistent results across all document types, regardless of how values appear on the page.
+`Item` is the structural element for hierarchies and repeating groups (e.g. invoice line items, VAT breakdowns, contact/address groups).
+An `Item` has no normalized value itself; it contains child details.
 
-- **Automated post-processing** —  
-  Downstream systems can rely on normalized values for comparison, validation, or aggregation.  
-  Formatting differences on the document (such as `12.3.2025`, `12/03/25`, or `March 12, 2025`) no longer matter.
+**Example:** `Line.Item` contains `ArticleDescription.String`, `Quantity.Decimal`, `Total.Amount`.
 
-- **Clear and expressive naming** —  
-  Using the datatype as the final segment of the detail identifier (e.g., `Invoice.Id`, `Payment.Amount`, `Issuer.Iban`)  
-  makes each detail name self-descriptive and semantically stable across languages.
 
-- **Extensibility and reuse** —  
-  Central datatype definitions can be extended with new normalization logic or reused across different document types,  
-  ensuring consistency and maintainability of the overall BluDoc schema.
 
-### Hierarchical Details: The Item Datatype
 
-The **Item** datatype is a special structural element that enables hierarchies and repeating groups.  
-Unlike atomic datatypes (Date, Amount, Name), an `Item` serves as a container for related child details.
-
-**Use cases:**
-- Invoice line items (each with Description, Quantity, Amount)
-- VAT breakdowns (each with Rate, Base, Tax)
-- Multiple contact persons or addresses
-
-An `Item` has no normalized value itself — it exists to group related details into structured, hierarchical objects.
-
-**Example:** `Line.Item` contains `Description.String`, `Quantity.Decimal`, `Total.Amount`
-
-### Detail Identifier
-Each detail in BluDoc has a unique identifier composed of one or more descriptive segments,  
-where the Datatype always forms the final segment of the name.
-
-Examples: `Issuer.Name`, `Invoice.Date`, `GrandTotal.Amount`, `Vat.Rate`, `Account.Iban`, `Document.Version`.
-
----
-
-## 2. BluDoc Datatypes and Normalization
-
-The following categorization serves organizational purposes only and has no semantic significance.  
-Alternative groupings may be equally valid, and the structure can be modified or extended at any time as requirements evolve.
-
----
-
-### 2.1 Primitive Types
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **Bool** | Boolean value (true/false) | `true` or `false` (lowercase) | Lowercase boolean strings | `Yes → "true"`<br>`No → "false"`<br>`1 → "true"`<br>`0 → "false"`<br>`X → "true"`<br>`checked → "true"` | `TaxExempt.Bool`, `Paid.Bool`, `Approved.Bool` | — |
-| **Int** | Integer number | Integer | | `00123 → "123"` | `Quantity.Int` | — |
-| **Decimal** | Decimal number | Decimal number | `.` as decimal separator | `12,5 → "12.5"` | `Rate.Decimal` | — |
-| **String** | Free text (paragraphs, notes, multi-line) | Text string (multi-line allowed) | Content preserved as-is | `Delivery will be delayed.` → `"Delivery will be delayed."` | `Notes.String`, `Description.String` | — |
-| **Bytes** | Binary content (e.g. images) | Base64-encoded string | | `[binary image data] → "iVBORw0KGgo...AASUVORK5CYII="` | `Attachment.Bytes` | — |
-| **Type** | Categorical value | Enum value | Enumerated values (controlled vocabulary) | `Credit Note → "CreditNote"` | `Document.Type` | — |
-| **Version** | Version number of a document or schema | `x.y.z` (dot-separated) | `x.y.z` | `v1-2-3 → "1.2.3"` | `Document.Version` | — |
-| **Language** | Language code | ISO 639-1 code (2 lowercase letters) | ISO 639-1 ([link](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) | `english → "en"` | `Document.Language` | — |
-
----
-
-### 2.2 Numeric and Temporal
-
-**Note:** All numeric datatypes are normalized without leading zeros and without group separators.
-
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **SmallAmount** | Decimal with four digits precision | Decimal number (4-digit precision) | `.` as decimal separator | `9,0009 → "9.0009"`<br>`123 → "123.0000"` | `Unit.SmallAmount` | Precision: 4 |
-| **Amount** | Monetary amount | Decimal number (2-digit precision) | `.` as decimal separator | `€1.234,50 → "1234.50"`<br>`-100,- → "-100.00"`<br>`one hundred pesos → "100.00"` | `GrandTotal.Amount` | Precision: 2 |
-| **Rate** | Percentage rate (percent sign removed) | Decimal percentage (1-digit precision) | `.` as decimal separator, ≤ `100.0` | `20 % → "20.0"`<br>`.19 → "19.0"` | `Vat.Rate` | Precision: 1 |
-| **Date** | Calendar date | `YYYY-MM-DD` | ISO 8601 ([link](https://en.wikipedia.org/wiki/ISO_8601)) | `12.3.2025 → "2025-03-12"` | `Invoice.Date` | — |
-| **Timestamp** | Date and time with timezone | `YYYY-MM-DDTHH:mm:ss.sss±hhmm` | ISO 8601 datetime ([link](https://en.wikipedia.org/wiki/ISO_8601)) | `12.03.2025 14:33 CET → "2025-03-12T14:33:00.000+0100"` | `Created.Timestamp` | — |
-| **Duration** | Time duration | Integer | Unit must be specified in detail name (Days/Hours) | `30 days → "30"`<br>`2 hours → "2"` | `DueDays.Duration`, `WorkingHours.Duration` | Unit: days or hours |
-| **Mileage** | Vehicle mileage or odometer reading | Integer | Numeric value without unit | `45,000 km → "45000"`<br>`12.500 km → "12500"`<br>`8000 miles → "8000"` | `Vehicle.Mileage`, `Odometer.Mileage` | Unit: km (or miles, context-dependent) |
-
----
-
-### 2.3 Financial
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **Currency** | Currency code | ISO 4217 code (3 letters) | 3 chars, ISO 4217 ([link](https://en.wikipedia.org/wiki/ISO_4217)) | `Euro → "EUR"` | `Invoice.Currency` | — |
-
----
-
-### 2.4 Identification
-
-**Note:** All datatypes in this section are normalized to uppercase, without spaces and without line breaks.
-
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **Id** | Unique identifier | Alphanumeric string | case-preserved; no line breaks | `inv-12345 → "inv-12345"` | `Invoice.Id` | — |
-| **VatId** | Value-added tax identifier | Alphanumeric string (country prefix + number) | Country prefix + normalized id | `AT U12345678 → "ATU12345678"` | `Issuer.VatId` | — |
-| **TaxId** | General tax identification number (non-VAT) | Alphanumeric string | Uppercase, without spaces and line breaks | `123/4567/8901 → "123/4567/8901"`<br>`12-3456789 → "12-3456789"`<br>`tax id: 987654321 → "987654321"` | `Sender.TaxId`, `Receiver.TaxId` | — |
-| **Iban** | International bank account number | Alphanumeric string | 15 to 34 chars | `AT61 1904 3002 3457 3201 → "AT611904300234573201"` | `Account.Iban` | — |
-| **Bic** | Bank identifier code | Alphanumeric string | 8 or 11 chars | `sphkat2bxxx → "SPHKAT2BXXX"` | `Account.Bic` | — |
-
----
-
-### 2.5 Contact and Address
-
-**Note:** All datatypes in this section are normalized without line breaks.
-
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **Name** | Person or organization name | Text string | | `Müller GmbH → "Müller GmbH"` | `Issuer.Name` | — |
-| **Street** | Street and house number | Text string | Normalized spacing | `Main St. 12 / 3 → "Main St. 12/3"` | `Contact.Street` | — |
-| **ZipCode** | Postal code | Alphanumeric string | Country-specific format | `A-5020 → "5020"`<br>`SW1A 1AA → "SW1A1AA"` | `Contact.ZipCode` | — |
-| **City** | City name | Text string | | `Salzburg → "Salzburg"` | `Contact.City` | — |
-| **Region** | State, province, or administrative division within a country | Text string | | `Salzburg → "Salzburg"` | `Contact.Region` | — |
-| **Country** | Country code | 2 uppercase letters | ISO 3166-1 alpha-2 ([link](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)) | `Austria → "AT"` | `Contact.Country` | — |
-| **Phone** | Telephone number | E.164 format | E.164 ([link](https://en.wikipedia.org/wiki/E.164)) | `0664 1234567 → "+436641234567"` | `Contact.Phone` | — |
-| **Email** | Email address | Email address (lowercase) | RFC 5322 ([link](https://www.rfc-editor.org/rfc/rfc5322)) | `Hans.Peter@Example.com → "hans.peter@example.com"` | `Contact.Email` | — |
-| **Website** | Website address (URL) | URL (lowercase host) | Lowercase host, scheme ensured | `WWW.Example.COM → "https://www.example.com"` | `Contact.Website` | — |
-
----
-
-### 2.6 Structural
-| Datatype | Description | Normalized Format | Pattern / Rule | Example (raw → normalized) | Detail Identifier Example | Unit / Precision |
-|-----------|-------------|-------------------|----------------|-----------------------------|---------------------------|------------------|
-| **Item** | Structural container for grouping related details | Hierarchical container | Groups nested details with their own datatypes into structured objects | — | `Line.Item`, `Vat.Item` | — |
-
----
-
-*End of document.*
+| Datatype | Description | Normalized Format | Normalization Rules | Validation | Examples |
+| --- | --- | --- | --- | --- | --- |
+| Amount | Monetary amount (no currency symbol) | decimal(2) | Extract numeric value, remove thousand separators, use dot for decimal separator. Handles both comma and dot as decimal separator based on position. Supports trailing dash notation for zero decimals (e.g., '100,--' becomes '100.00'). | precision: 2<br>regex: ^-?\d+\.\d{2}$<br>type: decimal | €1.234,50 → 1234.50, $1,234.50 → 1234.50, 100,-- → 100.00 |
+| Bic | Business Identifier Code (ISO 9362 / SWIFT-BIC) | ISO 9362 BIC format (8 or 11 characters) | Convert to uppercase, remove spaces. Validates against hardcoded list of European and select international country codes. | regex: ^[A-Z]{4}(AT|BE|BG|CY|CZ|DE|DK|EE|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK|US|CH|NO|LI|IS|MC|SM|AD|VA|RU|UA|RS|BA|AL|MD|MK|ME|BY|XK)[A-Z0-9]{2}([A-Z0-9]{3})?$ | deutdeff → DEUTDEFF, MARK DE FF XXX → MARKDEFFXXX, bkauatww → BKAUATWW |
+| Bool | Boolean flag | lowercase string ('true' or 'false') | Accepts: true/yes/1/y/on/checked for true; false/no/0/n/off/unchecked for false. Case-insensitive. | allowed: ['true', 'false'] | YES → true, 1 → true, No → false, 0 → false |
+| Bytes | Binary content encoded as Base64 (RFC 4648) | Base64 encoded string (RFC 4648) | Accepts Base64 encoded binary data. Must be valid Base64 with proper padding. | regex: ^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$ | SGVsbG8gV29ybGQ= → SGVsbG8gV29ybGQ=, VGVzdCBEYXRh → VGVzdCBEYXRh |
+| City | City/locality name |  | Convert to Title Case. Remove extra spaces. | maxLength: 128 | wien → Wien, BERLIN → Berlin, new  york → New York |
+| Country | Country code (ISO 3166-1 alpha-2) | ISO 3166-1 alpha-2 code | Maps country names (English, Display, Native) to ISO 3166-1 alpha-2 codes using CultureInfo. Returns uppercase 2-letter code. | regex: ^[A-Z]{2}$<br>method: dictionary lookup against CultureInfo regions | Austria → AT, Deutschland → DE, us → US |
+| Currency | Currency code (ISO 4217 alpha-3) | ISO 4217 alpha-3 code | Maps currency symbols and names to ISO 4217 alpha-3 codes using CultureInfo. Returns uppercase 3-letter code. | regex: ^[A-Z]{3}$<br>method: dictionary lookup against CultureInfo currency codes | € → EUR, usd → USD, GBP → GBP |
+| Date | Calendar date with multi-language support | ISO 8601 date (YYYY-MM-DD) | Multi-stage parsing: (1) Try exact format matching with culture-specific patterns (de, en-GB, en-US). (2) Fall back to DateTime.TryParse. (3) Parse Asian format indicators - Korean: 년(year)/월(month)/일(day), Chinese/Japanese: 年(year)/月(month)/日(day). Supports extensive format variations including abbreviated/full month names, day names, ordinal indicators (st/nd/rd/th), and various separators (. / - space comma). | regex: ^\d{4}-\d{2}-\d{2}$<br>min: 1900-01-01<br>max: 2100-12-31 | 12.3.2025 → 2025-03-12, 3/12/2025 → 2025-03-12, 2025년 3월 12일 → 2025-03-12, 2025年3月12日 → 2025-03-12 |
+| Decimal | Decimal number (.NET decimal type, 28-29 significant digits) | decimal with period as separator | Replace comma with period, parse using InvariantCulture. | type: decimal | 1234 → 1234, 12,345 → 12.345, -99.99 → -99.99 |
+| Duration | Duration as numeric value (supports integers and decimals) | decimal string with period as separator | Accepts numeric values (integer or decimal). Replaces comma with period for decimal parsing. |  | 30 → 30, 30,5 → 30.5, 7.25 → 7.25 |
+| Email | Email address (RFC 5322 simplified) | lowercase email address | Trim whitespace and convert to lowercase. | regex: ^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$ | Info@Example.COM → info@example.com,  user.name@domain.co.uk  → user.name@domain.co.uk |
+| Iban | International Bank Account Number (ISO 13616) | ISO 13616 IBAN format | Convert to uppercase, remove spaces. Uses IbanValidator for validation with mod-97 checksum verification. | regex: ^[A-Z]{2}[0-9A-Z]{13,32}$<br>checksumValidation: True<br>minLength: 15<br>maxLength: 34 | AT61 1904 3002 3457 3201 → AT611904300234573201, de89 3704 0044 0532 0130 00 → DE89370400440532013000, GB82WEST12345698765432 → GB82WEST12345698765432 |
+| Id | Identifier string | string (preserves original format) | Accepts any identifier string. No validation or normalization applied. | maxLength: 128 | INV-2024-001 → INV-2024-001, DN-2025-0007 → DN-2025-0007, TOUR-2025-0042 → TOUR-2025-0042 |
+| Int | Integer number (whole number) | integer | Parse as integer. No decimal values allowed. | regex: ^-?\d+$<br>type: integer | 0 → 0, 12 → 12, -42 → -42, 1000 → 1000 |
+| Item | Structural container for grouped/hierarchical details (composite datatype) | JSON object or array of objects containing related child details | Serves as a structural element to group related details into hierarchical objects. An Item has no normalized value itself - it exists to organize child details. Specific Item instances define which child details they contain via x-uses property. | type: object or array | None → None, None → None, None → None, None → None, None → None, None → None, None → None, None → None, None → None, None → None |
+| Language | Language code (ISO 639-1 two-letter code) | ISO 639-1 alpha-2 code (lowercase) | Convert to lowercase 2-letter ISO 639-1 language code. | regex: ^[a-z]{2}$ | DE → de, en → en, FR → fr |
+| Languages | Array of language codes (ISO 639-1) | Array of ISO 639-1 alpha-2 codes (lowercase) | Parse as array of 2-letter ISO 639-1 language codes. Convert each to lowercase. | itemRegex: ^[a-z]{2}$ | ['DE', 'EN'] → ['de', 'en'], ['en'] → ['en'], ['FR', 'de', 'IT'] → ['fr', 'de', 'it'] |
+| Mileage | Distance in kilometers | integer | Remove all commas and periods, parse as integer. | type: integer | 12.3 → 12, 1,500 → 1500, 150 → 150 |
+| Name | Person or organization name | string (preserves original format) | Accepts name as-is with additional whitespace cleaning. Preserves case and special characters. | maxLength: 256 | Muster  GmbH → Muster GmbH, Jane Doe → Jane Doe, O'Brien & Co. → O'Brien & Co. |
+| Phone | Telephone number in international format | E.164-like format (numeric with optional leading +) | Replace leading '00' with '+'. Remove all non-numeric characters except leading '+'. | regex: ^\+?\d+$ | +43 123 456 789 → +43123456789, 0049-89-123456 → +4989123456, 004312345678 → +4312345678 |
+| Rate | Percentage rate | decimal(1) | Parse as decimal. If value is less than 1 and contains a decimal point, automatically multiply by 100 to convert decimal fraction to percentage (e.g., 0.20 becomes 20.0). Replace comma with period. | min: 0<br>max: 100<br>precision: 1<br>type: decimal | 20 → 20.0, 0.20 → 20.0, 19,5 → 19.5 |
+| Region | Region/subdivision code or name | ISO 3166-2 code or Title Case name | If 2 characters, uppercase to ISO 3166-2 format. Otherwise, convert to Title Case and remove extra spaces. | maxLength: 128 | at-9 → AT-9, de-be → DE-BE, vienna → Vienna, BAYERN → Bayern |
+| SmallAmount | Small monetary amount with high precision (no currency symbol) | decimal(4) | Attempts parsing via AmountType (2 decimals) or DecimalType. Normalizes to 4 decimal places. | precision: 4<br>regex: ^-?\d+\.\d{4}$<br>type: decimal | 0.5 → 0.5000, 12 → 12.0000, 9.0009 → 9.0009, -12,9988 → -12.9988 |
+| Street | Street name and number | string (preserves original format) | Accepts street address as-is. No normalization applied. | maxLength: 256 | Hauptstraße 1 → Hauptstraße 1, 1 Infinite Loop → 1 Infinite Loop, Baker Street 221B → Baker Street 221B |
+| String | Generic string | string (preserves original format) | Accepts any string value. Minimal cleaning applied. | maxLength: 4096 | Any text value → Any text value, 123-ABC → 123-ABC, Special chars: @#$% → Special chars: @#$% |
+| TaxId | Tax identification number (country-specific format) | string (preserves original format) | Accepts any alphanumeric tax ID format. No validation or normalization applied. | maxLength: 32 | 123456789 → 123456789, 12-3456789 → 12-3456789, 123/456/789 → 123/456/789 |
+| Time | Time of day | hh:mm (12-hour format, no seconds) | Accepts HH:MM, HH.MM, or hours-only format. Stores as TimeSpan but normalizes to 12-hour format without seconds. | regex: ^(?:[0]\d|1[0-2]):[0-5]\d$ | 9:30 → 09:30, 17.45 → 05:45, 5 → 05:00 |
+| Timestamp | Timestamp with milliseconds and timezone offset | ISO 8601 extended format (yyyy-MM-dd'T'HH:mm:ss.SSSZ) | Parse timestamp in ISO 8601 format with millisecond precision and timezone offset. | regex: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}[+-]\d{4}$ | 2025-03-12T09:30:15.123+0100 → 2025-03-12T09:30:15.123+0100, 2025-12-31T23:59:59.999+0000 → 2025-12-31T23:59:59.999+0000 |
+| Type | Categorical type string for classification and categorization | string (preserves original format) | Accepts any categorical type identifier. No validation or normalization applied. Specific Type instances may define allowed values. | maxLength: 128 | invoice → invoice, Reverse Charge → Reverse Charge, Intra-community supply → Intra-community supply, pcs → pcs, meters → meters, Material → Material, Service → Service, Surcharge.Shipping → Surcharge.Shipping |
+| VatId | VAT identification number. Supports European VAT formats (ISO 3166-1 alpha-2 country code + number), Indian GSTIN (15 characters: 2 state + 10 PAN + 1 entity + Z + 1 check), EU prefix for non-EU entities, and Swiss format (CHE-XXX.XXX.XXX) | Country code + alphanumeric (uppercase, spaces removed) | Convert to uppercase, remove spaces. Uses VatIdValidator for country-specific format validation. | regex: ^[A-Z]{2}[A-Z0-9]+$<br>countrySpecificValidation: True<br>minLength: 4<br>maxLength: 15 | atu 12345678 → ATU12345678, DE 123456789 → DE123456789, fr12345678901 → FR12345678901, 29 BQVPS 9005 B 1 Z D → 29BQVPS9005B1ZD, EU372001951 → EU372001951 |
+| Version | Semantic version string (Semver 2.0.0) | Semver 2.0.0 (MAJOR.MINOR.PATCH) | Parse semantic version following Semver 2.0.0 specification. Supports optional pre-release and build metadata. | regex: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:[-+].+)?$ | 1.0.0 → 1.0.0, 2.3.4 → 2.3.4, 1.0.0-beta.1 → 1.0.0-beta.1 |
+| Website | Website URL with scheme (RFC 3986) | URL with scheme, normalized host, no trailing slash | Add https:// if no scheme present. Remove 'www.' prefix from host. Convert host to lowercase. Remove query strings and fragments. Remove trailing slash. | regex: ^(https?://).+ | www.Example.COM/ → https://example.com, http://subdomain.Example.org/path?query=1 → http://subdomain.example.org/path, https://site.com/page#section → https://site.com/page |
+| ZipCode | Postal/ZIP code |  | Remove all non-alphanumeric characters (spaces, hyphens, etc.). Convert to uppercase. | regex: ^[A-Z0-9]{3,10}$<br>minLength: 3<br>maxLength: 10 | 1010 → 1010, D-10115 → D10115, sw1a 1aa → SW1A1AA |

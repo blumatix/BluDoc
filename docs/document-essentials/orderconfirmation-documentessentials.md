@@ -1,0 +1,93 @@
+# Document Essentials for OrderConfirmation
+
+This page lists the default document essentials for this doctype.
+
+- **Cardinality** is shown in parentheses: `(1..1)` = required single value, `(0..1)` = optional, `(0..*)` = optional repeating, `(1..*)` = required repeating.
+- **Items** are structural containers that group related fields (shown as indented bullets below the Item).
+- Values shows allowed values when available.
+
+
+
+- OrderConfirmation.Id (1..1)
+- OrderConfirmation.Date (1..1)
+- Currency (0..1)
+- ReceiverOrder.Id (0..1)
+- SenderOrder.Id (0..1)
+- Surcharge.Item (0..*)
+  - Surcharge.Type
+  - Surcharge.Rate
+  - Surcharge.Amount
+- Contact.Item (0..*)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Sender.Contact.Item (1..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Receiver.Contact.Item (1..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Delivery.Contact.Item (0..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Invoice.Contact.Item (0..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Line.Item (1..*)
+  - Position.Id
+  - Article.Id
+  - Article.Description.String
+  - Article.Type
+  - Quantity.Decimal
+  - Unit.SmallAmount
+  - Total.Amount
+  - Order.Id
+  - DeliveryNote.Id
+  - Unit.Type
+  - Vat.Rate
+  - DeliveryDate.Item
+  - Discount.Item

@@ -1,128 +1,153 @@
 {
-    "BluDoc.Version": "1.4.2",
-    "Created.DateTime": "2025-02-13T12:16:48.3961735+00:00",
-    "CreatorSoftware.Name": "Blumatix.BluDocConverter.Business.ApiResponse.ApiResponseConverter",
-    "CreatorSoftware.Version": "2.0.0.0",
-    "Document.Languages": [
-        "de"
-    ],
-    "Document.Type": "Invoice",
-    "DocumentEssentials": [
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "Invoice.Type",
-            "Location": {
-                "Height": 0,
-                "Left": 0,
-                "Page": 1,
-                "Top": 0,
-                "Width": 0
-            },
-            "Text": "Invoice",
-            "Value": "Invoice"
-        },
-        {
-            "Confidence": 0.78,
-            "Items": null,
-            "Label": "Invoice.Id",
-            "Location": {
-                "Height": 29,
-                "Left": 1817,
-                "Page": 1,
-                "Top": 399,
-                "Width": 205
-            },
-            "Text": "1954746731",
-            "Value": "1954746731"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "SenderOrder.Id",
-            "Location": {
-                "Height": 29,
-                "Left": 491,
-                "Page": 1,
-                "Top": 1020,
-                "Width": 137
-            },
-            "Text": "A1237B",
-            "Value": "A1237B"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "Customer.Id",
-            "Location": {
-                "Height": 28,
-                "Left": 1816,
-                "Page": 1,
-                "Top": 459,
-                "Width": 124
-            },
-            "Text": "HVK1A",
-            "Value": "HVK1A"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "Invoice.Date",
-            "Location": {
-                "Height": 29,
-                "Left": 1814,
-                "Page": 1,
-                "Top": 332,
-                "Width": 191
-            },
-            "Text": "25.03.2020",
-            "Value": "2020-03-25"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "SenderOrder.Date",
-            "Location": {
-                "Height": 29,
-                "Left": 2142,
-                "Page": 1,
-                "Top": 1023,
-                "Width": 166
-            },
-            "Text": "15.3.2020",
-            "Value": "2020-03-15"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "ReceiverOrder.Date",
-            "Location": {
-                "Height": 30,
-                "Left": 2143,
-                "Page": 1,
-                "Top": 915,
-                "Width": 164
-            },
-            "Text": "15.3.2020",
-            "Value": "2020-03-15"
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.99,
+  "JobId": "10b53ab8-b6ae-472c-93b9-629a69856a12",
+  "CustomerId": "default-customer",
+  "CurrentState": "Finished",
+  "LastUpdated": "2026-01-23T14:59:05.3638259Z",
+  "ErrorMessage": null,
+  "ErrorCode": 0,
+  "Result": {
+    "AdditionalContextData": {},
+    "Documents": [
+      {
+        "DocumentId": "muster_rechnung_de-AT.pdf",
+        "Grouping": null,
+        "Classification": null,
+        "Extraction": {
+          "Result": {
+            "BluDoc.Version": "1.5.0",
+            "Created.DateTime": "2026-01-23T14:59:05.1258374+00:00",
+            "CreatorSoftware.Name": "DocumentWorkflow",
+            "CreatorSoftware.Version": "1.0.0",
+            "Document.Type": "invoice",
+            "DocumentEssentials": [
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Contract.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "CostCenter.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Customer.Id",
+                "Location": {
+                  "Height": 37,
+                  "Left": 1808,
+                  "Page": 1,
+                  "Top": 454,
+                  "Width": 134
+                },
+                "Text": "HVK1A",
+                "Value": "HVK1A"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Invoice.Id",
+                "Location": {
+                  "Height": 38,
+                  "Left": 1808,
+                  "Page": 1,
+                  "Top": 393,
+                  "Width": 221
+                },
+                "Text": "1954746731",
+                "Value": "1954746731"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Invoice.Date",
+                "Location": {
+                  "Height": 37,
+                  "Left": 1808,
+                  "Page": 1,
+                  "Top": 326,
+                  "Width": 198
+                },
+                "Text": "25.03.2020",
+                "Value": "2020-03-25"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Invoice.Type",
+                "Location": null,
+                "Text": "Invoice",
+                "Value": "Invoice"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Currency",
+                "Location": null,
+                "Text": "EUR",
+                "Value": "EUR"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "ReceiverOrder.Id",
+                "Location": {
+                  "Height": 43,
+                  "Left": 480,
+                  "Page": 1,
+                  "Top": 907,
+                  "Width": 130
+                },
+                "Text": "258934",
+                "Value": "258934"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "ReceiverOrder.Date",
+                "Location": null,
+                "Text": "15.3.2020",
+                "Value": "2020-03-15"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "DeliveryNote.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Delivery.Date",
-                    "Location": {
-                        "Height": 34,
-                        "Left": 411,
-                        "Page": 1,
-                        "Top": 1279,
-                        "Width": 179
-                    },
-                    "Text": "20.3.2020",
-                    "Value": "2020-03-20"
-                },
-                {
+                    "Location": null,
+                    "Text": "22.3.2020",
+                    "Value": "2020-03-22"
+                  },
+                  {
                     "Confidence": 0.0,
                     "ConfidenceThreshold": -1.0,
                     "Items": null,
@@ -130,8 +155,8 @@
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
+                  },
+                  {
                     "Confidence": 0.0,
                     "ConfidenceThreshold": -1.0,
                     "Items": null,
@@ -139,452 +164,90 @@
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                }
-            ],
-            "Label": "DeliveryDate.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.99,
-                    "Items": null,
-                    "Label": "Bank.Iban",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 284,
-                        "Page": 1,
-                        "Top": 2599,
-                        "Width": 435
-                    },
-                    "Text": "AT092250054214543625",
-                    "Value": "AT092250054214543625"
-                }
-            ],
-            "Label": "BankAccount.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.99,
-                    "Items": null,
-                    "Label": "Bank.Bic",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 272,
-                        "Page": 1,
-                        "Top": 2647,
-                        "Width": 226
-                    },
-                    "Text": "BKAUATWW",
-                    "Value": "BKAUATWW"
-                }
-            ],
-            "Label": "BankAccount.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Confidence": 0.90,
-            "Items": null,
-            "Label": "ReferencedInvoice.Id",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.95,
-            "ConfidenceThreshold": -1,
-            "Items": [
-                {
-                    "Confidence": 0.95,
-                    "ConfidenceThreshold": -1,
-                    "Items": null,
-                    "Label": "AccountingText.String",
-                    "Location": null,
-                    "Text": "IT-Services",
-                    "Value": "IT-Services"
-                }
-            ],
-            "Label": "AccountingEntry.Item",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.85,
-            "Items": null,
-            "Label": "PaymentStatus.Type",
-            "Location": null,
-            "Text": "Open",
-            "Value": "Open"
-        },
-        {
-            "Confidence": 0.90,
-            "Items": null,
-            "Label": "PaymentMethod.Type",
-            "Location": null,
-            "Text": "Bank_Transfer",
-            "Value": "Bank_Transfer"
-        },
-        {
-            "Confidence": 0.95,
-            "Items": null,
-            "Label": "Payment.Amount",
-            "Location": null,
-            "Text": "2.380,00",
-            "Value": "2380.00"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "GrandTotal.Amount",
-            "Location": {
-                "Height": 29,
-                "Left": 2084,
-                "Page": 1,
-                "Top": 2336,
-                "Width": 191
-            },
-            "Text": "634 888.00",
-            "Value": "634888.00"
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "VatExemption.Type",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "Currency",
-            "Location": {
-                "Height": 0,
-                "Left": 0,
-                "Page": 1,
-                "Top": 0,
-                "Width": 0
-            },
-            "Text": "EUR",
-            "Value": "EUR"
-        },
-        {
-            "Confidence": 0.99,
-            "Items": null,
-            "Label": "ReceiverOrder.Id",
-            "Location": {
-                "Height": 30,
-                "Left": 478,
-                "Page": 1,
-                "Top": 915,
-                "Width": 128
-            },
-            "Text": "258934",
-            "Value": "258934"
-        },
-        {
-            "Confidence": 0.98,
-            "Items": null,
-            "Label": "DeliveryNote.Id",
-            "Location": {
-                "Height": 29,
-                "Left": 977,
-                "Page": 1,
-                "Top": 1279,
-                "Width": 108
-            },
-            "Text": "LS185",
-            "Value": "LS185"
-        },
-        {
-            "Confidence": 0.97,
-            "Items": null,
-            "Label": "DeliveryNote.Id",
-            "Location": {
-                "Height": 29,
-                "Left": 977,
-                "Page": 1,
-                "Top": 1582,
-                "Width": 108
-            },
-            "Text": "LS187",
-            "Value": "LS187"
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "CompanyRegistration.Id",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "CostCenter.Id",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "NO.K.Id",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.98,
-            "Items": null,
-            "Label": "Sender.TaxId",
-            "Location": {
-                "Height": 29,
-                "Left": 1375,
-                "Page": 1,
-                "Top": 2647,
-                "Width": 252
-            },
-            "Text": "130/983/65938",
-            "Value": "130/983/65938"
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "CH.IsrReference",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "CH.IsrSubscriber",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.9357,
-            "Items": null,
-            "Label": "Sender.VatId",
-            "Location": {
-                "Height": 29,
-                "Left": 1964,
-                "Page": 1,
-                "Top": 2541,
-                "Width": 249
-            },
-            "Text": "ATU70948479",
-            "Value": "ATU70948479"
-        },
-        {
-            "Confidence": 0.9886,
-            "Items": null,
-            "Label": "SenderTax.Id",
-            "Location": {
-                "Height": 29,
-                "Left": 1375,
-                "Page": 1,
-                "Top": 2647,
-                "Width": 252
-            },
-            "Text": "130/983/65938",
-            "Value": "130/983/65938"
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "Receiver.VatId",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": null,
-            "Label": "ReceiverTax.Id",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.4407,
-                    "Items": null,
-                    "Label": "Vat.Rate",
-                    "Location": {
-                        "Height": 30,
-                        "Left": 1284,
-                        "Page": 1,
-                        "Top": 2030,
-                        "Width": 48
-                    },
-                    "Text": "10",
-                    "Value": "10.0"
+                  }
+                ],
+                "Label": "DeliveryDate.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Sender.VatId",
+                "Location": {
+                  "Height": 42,
+                  "Left": 1963,
+                  "Page": 1,
+                  "Top": 2530,
+                  "Width": 253
                 },
-                {
-                    "Confidence": 0.4407,
-                    "Items": null,
-                    "Label": "Net.Amount",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 1168,
-                        "Page": 1,
-                        "Top": 2232,
-                        "Width": 116
-                    },
-                    "Text": "800.00",
-                    "Value": "800.00"
+                "Text": "ATU70948479",
+                "Value": "ATU70948479"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Sender.TaxId",
+                "Location": {
+                  "Height": 40,
+                  "Left": 1369,
+                  "Page": 1,
+                  "Top": 2638,
+                  "Width": 261
                 },
-                {
-                    "Confidence": 0.4407,
-                    "Items": null,
-                    "Label": "Vat.Amount",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 1190,
-                        "Page": 1,
-                        "Top": 2134,
-                        "Width": 94
-                    },
-                    "Text": "80.00",
-                    "Value": "80.00"
-                }
-            ],
-            "Label": "Vat.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Confidence": 0.0,
-            "ConfidenceThreshold": -1.0,
-            "Items": [
-                {
-                    "Confidence": 0.0,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Delivery.Date",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
+                "Text": "130/983/65938",
+                "Value": "130/983/65938"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Receiver.VatId",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Receiver.TaxId",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "GrandTotal.Amount",
+                "Location": {
+                  "Height": 41,
+                  "Left": 2079,
+                  "Page": 1,
+                  "Top": 2328,
+                  "Width": 195
                 },
-                {
-                    "Confidence": 0.0,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "DeliveryPeriodStart.Date",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.0,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "DeliveryPeriodEnd.Date",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                }
-            ],
-            "Label": "DeliveryDate.Item",
-            "Location": null,
-            "Text": "",
-            "Value": ""
-        },
-        {
-            "Items": [
-                {
-                    "Items": [
-                        {
-                            "Confidence": 0.0,
-                            "ConfidenceThreshold": -1.0,
-                            "Items": null,
-                            "Label": "Due.Date",
-                            "Location": null,
-                            "Text": "",
-                            "Value": ""
-                        },
-                        {
-                            "Confidence": 1.0,
-                            "Items": null,
-                            "Label": "Due.Duration",
-                            "Location": {
-                                "Height": 37,
-                                "Left": 592,
-                                "Page": 1,
-                                "Top": 2392,
-                                "Width": 156
-                            },
-                            "Text": "10 Tagen",
-                            "Value": "10"
-                        }
-                    ],
-                    "Label": "Due.Item",
-                    "Location": null,
-                    "Text": null,
-                    "Value": null
-                },
-                {
-                    "Items": [
-                        {
-                            "Confidence": 1.0,
-                            "Items": null,
-                            "Label": "Discount.Rate",
-                            "Location": {
-                                "Height": 29,
-                                "Left": 762,
-                                "Page": 1,
-                                "Top": 2392,
-                                "Width": 52
-                            },
-                            "Text": "2 %",
-                            "Value": "2.0"
-                        },
-                        {
-                            "Confidence": 0.0,
-                            "ConfidenceThreshold": -1.0,
-                            "Items": null,
-                            "Label": "Discount.Amount",
-                            "Location": null,
-                            "Text": "",
-                            "Value": ""
-                        }
-                    ],
-                    "Label": "Discount.Item",
-                    "Location": null,
-                    "Text": null,
-                    "Value": null
-                }
-            ],
-            "Label": "Payment.Discount.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
+                "Text": "634888",
+                "Value": "634888.00"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "GrandTotalConverted.Amount",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
                     "Confidence": 0.0,
                     "ConfidenceThreshold": -1.0,
                     "Items": null,
@@ -592,369 +255,1495 @@
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
-                    "Confidence": 1.0,
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Due.Duration",
                     "Location": {
-                        "Height": 36,
-                        "Left": 186,
-                        "Page": 1,
-                        "Top": 2440,
-                        "Width": 139
+                      "Height": 42,
+                      "Left": 183,
+                      "Page": 1,
+                      "Top": 2431,
+                      "Width": 43
                     },
-                    "Text": "30 Tage",
+                    "Text": "30",
                     "Value": "30"
-                }
-            ],
-            "Label": "Due.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.99,
-                    "Items": null,
-                    "Label": "Bank.Id",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 281,
-                        "Page": 1,
-                        "Top": 2751,
-                        "Width": 101
-                    },
-                    "Text": "12000",
-                    "Value": "12000"
-                },
-                {
-                    "Confidence": 0.99,
-                    "Items": null,
-                    "Label": "Account.Id",
-                    "Location": {
-                        "Height": 29,
-                        "Left": 453,
-                        "Page": 1,
-                        "Top": 2703,
-                        "Width": 231
-                    },
-                    "Text": "14921654100",
-                    "Value": "14921654100"
-                }
-            ],
-            "Label": "BankAccount.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.Name",
-                    "Location": {
-                        "Height": 77,
-                        "Left": 193,
-                        "Page": 1,
-                        "Top": 309,
-                        "Width": 821
-                    },
-                    "Text": "Handelsagentur Fux",
-                    "Value": "Handelsagentur Fux"
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.City",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "Salzburg",
-                    "Value": "Salzburg"
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.Country",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.Street",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "Schwarzstraße 45",
-                    "Value": "Schwarzstraße 45"
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.ZipCode",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "5020",
-                    "Value": "5020"
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.Email",
-                    "Location": {
-                        "Height": 38,
-                        "Left": 1372,
-                        "Page": 1,
-                        "Top": 2540,
-                        "Width": 225
-                    },
-                    "Text": "office@fux.at",
-                    "Value": "office@fux.at"
-                },
-                {
-                    "Confidence": 0.4715,
-                    "Items": null,
-                    "Label": "Contact.Phone",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "",
-                    "Value": ""
-                }
-            ],
-            "Label": "Sender.Contact.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Items": [
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.Name",
-                    "Location": {
-                        "Height": 79,
-                        "Left": 616,
-                        "Page": 1,
-                        "Top": 623,
-                        "Width": 375
-                    },
-                    "Text": "Massimo Mustermann Match GmbH",
-                    "Value": "Massimo Mustermann Match GmbH"
-                },
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.City",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "Salzburg",
-                    "Value": "Salzburg"
-                },
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.Country",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.Street",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "Bergheimerstraße 14",
-                    "Value": "Bergheimerstraße 14"
-                },
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.ZipCode",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "5020",
-                    "Value": "5020"
-                },
-                {
-                    "Confidence": 0.4741,
-                    "Items": null,
-                    "Label": "Contact.Phone",
-                    "Location": {
-                        "Height": 0,
-                        "Left": 0,
-                        "Page": 1,
-                        "Top": 0,
-                        "Width": 0
-                    },
-                    "Text": "",
-                    "Value": ""
-                }
-            ],
-            "Label": "Receiver.Contact.Item",
-            "Location": null,
-            "Text": null,
-            "Value": null
-        },
-        {
-            "Confidence": 0.80,
-            "ConfidenceThreshold": -1,
-            "Items": [
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
-                    "Items": null,
-                    "Label": "Contact.Name",
+                  }
+                ],
+                "Label": "Due.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Due.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.85,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Due.Duration",
+                        "Location": {
+                          "Height": 45,
+                          "Left": 589,
+                          "Page": 1,
+                          "Top": 2383,
+                          "Width": 40
+                        },
+                        "Text": "10",
+                        "Value": "10"
+                      }
+                    ],
+                    "Label": "Due.Item",
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.85,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Rate",
+                        "Location": null,
+                        "Text": "2",
+                        "Value": "2.0"
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Amount",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "Discount.Item",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Payment.Discount.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "PaymentReference.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": {
+                      "Height": 82,
+                      "Left": 180,
+                      "Page": 1,
+                      "Top": 301,
+                      "Width": 841
+                    },
+                    "Text": "Handelsagentur Fux",
+                    "Value": "Handelsagentur Fux"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Attention.Name",
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Street",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                    "Location": {
+                      "Height": 45,
+                      "Left": 181,
+                      "Page": 1,
+                      "Top": 394,
+                      "Width": 363
+                    },
+                    "Text": "Schwarzstraße 45",
+                    "Value": "Schwarzstraße 45"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.ZipCode",
                     "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                    "Text": "5020",
+                    "Value": "5020"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.City",
                     "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                    "Text": "Salzburg",
+                    "Value": "Salzburg"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Region",
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Country",
                     "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                    "Text": "Austria",
+                    "Value": "AT"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Website",
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Email",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                },
-                {
-                    "Confidence": 0.80,
-                    "ConfidenceThreshold": -1,
+                    "Location": {
+                      "Height": 43,
+                      "Left": 1367,
+                      "Page": 1,
+                      "Top": 2532,
+                      "Width": 234
+                    },
+                    "Text": "office@fux.at",
+                    "Value": "office@fux.at"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
                     "Items": null,
                     "Label": "Contact.Phone",
                     "Location": null,
                     "Text": "",
                     "Value": ""
-                }
+                  }
+                ],
+                "Label": "Sender.Contact.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": {
+                      "Height": 41,
+                      "Left": 610,
+                      "Page": 1,
+                      "Top": 616,
+                      "Width": 386
+                    },
+                    "Text": "Massimo Mustermann",
+                    "Value": "Massimo Mustermann"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Attention.Name",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Street",
+                    "Location": {
+                      "Height": 42,
+                      "Left": 612,
+                      "Page": 1,
+                      "Top": 716,
+                      "Width": 369
+                    },
+                    "Text": "Bergheimerstraße 14",
+                    "Value": "Bergheimerstraße 14"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.ZipCode",
+                    "Location": null,
+                    "Text": "5020",
+                    "Value": "5020"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.City",
+                    "Location": null,
+                    "Text": "Salzburg",
+                    "Value": "Salzburg"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Region",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Country",
+                    "Location": null,
+                    "Text": "Austria",
+                    "Value": "AT"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Website",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Email",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Phone",
+                    "Location": {
+                      "Height": 36,
+                      "Left": 611,
+                      "Page": 1,
+                      "Top": 819,
+                      "Width": 285
+                    },
+                    "Text": "+436608553947",
+                    "Value": "+436608553947"
+                  }
+                ],
+                "Label": "Receiver.Contact.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "ReferencedInvoice.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "AccountingText.String",
+                    "Location": null,
+                    "Text": "Consumer Goods",
+                    "Value": "Consumer Goods"
+                  }
+                ],
+                "Label": "AccountingEntry.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "PaymentStatus.Type",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "PaymentMethod.Type",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Payment.Amount",
+                "Location": {
+                  "Height": 41,
+                  "Left": 2079,
+                  "Page": 1,
+                  "Top": 2328,
+                  "Width": 195
+                },
+                "Text": "634888",
+                "Value": "634888.00"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Attention.Name",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Street",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.ZipCode",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.City",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Region",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Country",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Website",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Email",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Contact.Phone",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Delivery.Contact.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": {
+                      "Height": 45,
+                      "Left": 589,
+                      "Page": 1,
+                      "Top": 2383,
+                      "Width": 40
+                    },
+                    "Text": "10",
+                    "Value": "10.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Net.Amount",
+                    "Location": null,
+                    "Text": "800",
+                    "Value": "800.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Amount",
+                    "Location": {
+                      "Height": 53,
+                      "Left": 1184,
+                      "Page": 1,
+                      "Top": 2115,
+                      "Width": 99
+                    },
+                    "Text": "80",
+                    "Value": "80.00"
+                  }
+                ],
+                "Label": "Vat.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "20",
+                    "Value": "20.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Net.Amount",
+                    "Location": {
+                      "Height": 55,
+                      "Left": 1527,
+                      "Page": 1,
+                      "Top": 2213,
+                      "Width": 199
+                    },
+                    "Text": "528340",
+                    "Value": "528340.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Amount",
+                    "Location": {
+                      "Height": 53,
+                      "Left": 2079,
+                      "Page": 1,
+                      "Top": 2117,
+                      "Width": 195
+                    },
+                    "Text": "105748",
+                    "Value": "105748.00"
+                  }
+                ],
+                "Label": "Vat.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Bank.Iban",
+                    "Location": {
+                      "Height": 40,
+                      "Left": 283,
+                      "Page": 1,
+                      "Top": 2590,
+                      "Width": 441
+                    },
+                    "Text": "AT092250054214543625",
+                    "Value": "AT092250054214543625"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Bank.Bic",
+                    "Location": {
+                      "Height": 40,
+                      "Left": 270,
+                      "Page": 1,
+                      "Top": 2638,
+                      "Width": 233
+                    },
+                    "Text": "BKAUATWW",
+                    "Value": "BKAUATWW"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Bank.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Account.Id",
+                    "Location": {
+                      "Height": 43,
+                      "Left": 451,
+                      "Page": 1,
+                      "Top": 2692,
+                      "Width": 238
+                    },
+                    "Text": "14921654100",
+                    "Value": "14921654100"
+                  }
+                ],
+                "Label": "BankAccount.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Position.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "ArticleDescription.String",
+                    "Location": {
+                      "Height": 44,
+                      "Left": 184,
+                      "Page": 1,
+                      "Top": 1371,
+                      "Width": 519
+                    },
+                    "Text": "Steinway Konzert Flügel Weiß",
+                    "Value": "Steinway Konzert Flügel Weiß"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Quantity.Decimal",
+                    "Location": null,
+                    "Text": "1",
+                    "Value": "1"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.SmallAmount",
+                    "Location": {
+                      "Height": 41,
+                      "Left": 2078,
+                      "Page": 1,
+                      "Top": 1370,
+                      "Width": 196
+                    },
+                    "Text": "499000",
+                    "Value": "499000.0000"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Amount",
+                    "Location": {
+                      "Height": 41,
+                      "Left": 2078,
+                      "Page": 1,
+                      "Top": 1370,
+                      "Width": 196
+                    },
+                    "Text": "499000",
+                    "Value": "499000.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Order.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "DeliveryNote.Id",
+                    "Location": {
+                      "Height": 44,
+                      "Left": 974,
+                      "Page": 1,
+                      "Top": 1268,
+                      "Width": 119
+                    },
+                    "Text": "LS185",
+                    "Value": "LS185"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "20",
+                    "Value": "20.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Delivery.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodStart.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodEnd.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "DeliveryDate.Item",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Rate",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Amount",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "Discount.Item",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Line.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Position.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "ArticleDescription.String",
+                    "Location": {
+                      "Height": 44,
+                      "Left": 183,
+                      "Page": 1,
+                      "Top": 1473,
+                      "Width": 371
+                    },
+                    "Text": "Dirigierstab Elfenbein",
+                    "Value": "Dirigierstab Elfenbein"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Quantity.Decimal",
+                    "Location": null,
+                    "Text": "1",
+                    "Value": "1"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.SmallAmount",
+                    "Location": {
+                      "Height": 37,
+                      "Left": 2153,
+                      "Page": 1,
+                      "Top": 1474,
+                      "Width": 121
+                    },
+                    "Text": "780",
+                    "Value": "780.0000"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Amount",
+                    "Location": {
+                      "Height": 37,
+                      "Left": 2153,
+                      "Page": 1,
+                      "Top": 1474,
+                      "Width": 121
+                    },
+                    "Text": "780",
+                    "Value": "780.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Order.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "DeliveryNote.Id",
+                    "Location": {
+                      "Height": 44,
+                      "Left": 974,
+                      "Page": 1,
+                      "Top": 1268,
+                      "Width": 119
+                    },
+                    "Text": "LS185",
+                    "Value": "LS185"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "20",
+                    "Value": "20.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Delivery.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodStart.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodEnd.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "DeliveryDate.Item",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Rate",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Amount",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "Discount.Item",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Line.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Position.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "ArticleDescription.String",
+                    "Location": {
+                      "Height": 43,
+                      "Left": 179,
+                      "Page": 1,
+                      "Top": 1671,
+                      "Width": 431
+                    },
+                    "Text": "nVidia GPU M60 \"Tesla\"",
+                    "Value": "nVidia GPU M60 \"Tesla\""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Quantity.Decimal",
+                    "Location": {
+                      "Height": 33,
+                      "Left": 1157,
+                      "Page": 1,
+                      "Top": 1676,
+                      "Width": 31
+                    },
+                    "Text": "4",
+                    "Value": "4"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.SmallAmount",
+                    "Location": {
+                      "Height": 53,
+                      "Left": 2100,
+                      "Page": 1,
+                      "Top": 1666,
+                      "Width": 175
+                    },
+                    "Text": "28560",
+                    "Value": "28560.0000"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Amount",
+                    "Location": {
+                      "Height": 53,
+                      "Left": 2100,
+                      "Page": 1,
+                      "Top": 1666,
+                      "Width": 175
+                    },
+                    "Text": "28560",
+                    "Value": "28560.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Order.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "DeliveryNote.Id",
+                    "Location": {
+                      "Height": 42,
+                      "Left": 974,
+                      "Page": 1,
+                      "Top": 1572,
+                      "Width": 116
+                    },
+                    "Text": "LS187",
+                    "Value": "LS187"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "20",
+                    "Value": "20.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Delivery.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodStart.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodEnd.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "DeliveryDate.Item",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Rate",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Amount",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "Discount.Item",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Line.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Position.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "ArticleDescription.String",
+                    "Location": {
+                      "Height": 43,
+                      "Left": 179,
+                      "Page": 1,
+                      "Top": 1768,
+                      "Width": 215
+                    },
+                    "Text": "Mars Riegel",
+                    "Value": "Mars Riegel"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Quantity.Decimal",
+                    "Location": {
+                      "Height": 38,
+                      "Left": 1162,
+                      "Page": 1,
+                      "Top": 1769,
+                      "Width": 91
+                    },
+                    "Text": "1000",
+                    "Value": "1000"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.SmallAmount",
+                    "Location": null,
+                    "Text": "800",
+                    "Value": "800.0000"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Amount",
+                    "Location": null,
+                    "Text": "800",
+                    "Value": "800.00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Order.Id",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "DeliveryNote.Id",
+                    "Location": {
+                      "Height": 42,
+                      "Left": 974,
+                      "Page": 1,
+                      "Top": 1572,
+                      "Width": 116
+                    },
+                    "Text": "LS187",
+                    "Value": "LS187"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Unit.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": {
+                      "Height": 45,
+                      "Left": 589,
+                      "Page": 1,
+                      "Top": 2383,
+                      "Width": 40
+                    },
+                    "Text": "10",
+                    "Value": "10.0"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Delivery.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodStart.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "DeliveryPeriodEnd.Date",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "DeliveryDate.Item",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 0.0,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": [
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Rate",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      },
+                      {
+                        "Confidence": 0.0,
+                        "ConfidenceThreshold": -1.0,
+                        "Items": null,
+                        "Label": "Discount.Amount",
+                        "Location": null,
+                        "Text": "",
+                        "Value": ""
+                      }
+                    ],
+                    "Label": "Discount.Item",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Line.Item",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              }
             ],
-            "Label": "Delivery.Contact.Item",
-            "Location": null,
-            "Text": "",
-            "Value": ""
+            "DocumentProvider.Name": "blumatix",
+            "Pages": [
+              {
+                "AppliedRotationDegreesClockwise": 0,
+                "Dpi": 300,
+                "Height": 3504,
+                "Id": 1,
+                "Width": 2479
+              }
+            ]
+          },
+          "ResultState": {
+            "Code": "200",
+            "Message": "OK"
+          }
         }
+      }
     ],
-    "DocumentProvider.Name": "Blumatix.Capture.Website",
-    "Pages": [
-        {
-            "Dpi": 300,
-            "Height": 2780,
-            "Id": 1,
-            "Width": 2308
-        }
-    ]
+    "OriginalFiles": null
+  },
+  "History": [
+    {
+      "State": "Running",
+      "Timestamp": "2026-01-23T14:58:51.2187241Z"
+    },
+    {
+      "State": "Finished",
+      "Timestamp": "2026-01-23T14:59:05.3638259Z"
+    }
+  ]
 }

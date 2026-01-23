@@ -1,0 +1,102 @@
+# Document Essentials for Invoice
+
+This page lists the default document essentials for this doctype.
+
+- **Cardinality** is shown in parentheses: `(1..1)` = required single value, `(0..1)` = optional, `(0..*)` = optional repeating, `(1..*)` = required repeating.
+- **Items** are structural containers that group related fields (shown as indented bullets below the Item).
+- Values shows allowed values when available.
+
+
+
+- Invoice.Id (1..1)
+- Contract.Id (1..1)
+- Invoice.Date (1..1)
+- Invoice.Type (1..1)
+- Currency (1..1)
+- ReceiverOrder.Id (1..1)
+- ReceiverOrder.Date (0..1)
+- Sender.VatId (1..1)
+- Receiver.VatId (0..1)
+- Sender.TaxId (0..1)
+- Receiver.TaxId (0..1)
+- GrandTotal.Amount (1..1)
+- PaymentReference.Id (0..1)
+- Payment.Amount (1..1)
+- ReferencedInvoice.Id (1..1)
+- CostCenter.Id (0..1)
+- Customer.Id (0..1)
+- Vat.Item (1..*)
+  - Vat.Rate
+  - Net.Amount
+  - Vat.Amount
+- Payment.Discount.Item (0..1)
+  - Due.Item
+  - Discount.Item
+- Line.Item (1..*)
+  - Position.Id
+  - Article.Id
+  - ReceiverArticle.Id
+  - ArticleDescription.String
+  - Quantity.Decimal
+  - Unit.SmallAmount
+  - Total.Amount
+  - Order.Id
+  - DeliveryNote.Id
+  - Unit.Type
+  - Vat.Rate
+  - Article.Type
+  - DeliveryDate.Item
+  - Discount.Item
+- BankAccount.Item (1..*)
+  - Bank.Iban
+  - Bank.Bic
+  - Bank.Id
+  - Account.Id
+- Contact.Item (0..*)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Sender.Contact.Item (1..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Receiver.Contact.Item (1..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Delivery.Contact.Item (0..1)
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax

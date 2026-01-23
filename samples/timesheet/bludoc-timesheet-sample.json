@@ -1,2078 +1,440 @@
 {
-    "BluDoc.Version": "1.4.1",
-    "Created.DateTime": "2025-05-07T08:18:41.3531333+00:00",
-    "CreatorSoftware.Name": "document",
-    "CreatorSoftware.Version": "0.1.0",
-    "Document.Languages": [
-      "de"
-    ],
-    "Document.Type": "Timesheet",
-    "DocumentEssentials": [
+  "JobId": "348395f8-4848-4a7d-add9-3ebe43555ea7",
+  "CustomerId": "default-customer",
+  "CurrentState": "Finished",
+  "LastUpdated": "2026-01-23T15:10:21.7802712Z",
+  "ErrorMessage": null,
+  "ErrorCode": 0,
+  "Result": {
+    "AdditionalContextData": {},
+    "Documents": [
       {
-        "Label": "Staff.Id",
-        "Text": "123",
-        "Value": "123"
-      },
-      {
-        "Label": "Staff.Name",
-        "Text": "Max Muster",
-        "Value": "Max Muster"
-      },
-      {
-        "Label": "ConstructionSite.String",
-        "Text": "BluDelta",
-        "Value": "BluDelta"
-      },
-      {
-        "Label": "Customer.Name",
-        "Text": "Blumatix",
-        "Value": "Blumatix"
-      },
-      {
-        "Label": "Signature.Bool",
-        "Text": "True",
-        "Value": "true"
-      },
-      {
-        "Label": "Total.Duration",
-        "Text": "38.5",
-        "Value": "38.5"
-      },
-      {
-        "Label": "Info.String",
-        "Text": "",
-        "Value": ""
-      },
-      {
-        "Items": [
-          {
-            "Label": "Date",
-            "Text": "14.04.2025",
-            "Value": "2025-04-14"
+        "DocumentId": "bludoc-timesheet-sample.jpg",
+        "Grouping": null,
+        "Classification": null,
+        "Extraction": {
+          "Result": {
+            "BluDoc.Version": "1.5.0",
+            "Created.DateTime": "2026-01-23T15:10:21.5827587+00:00",
+            "CreatorSoftware.Name": "DocumentWorkflow",
+            "CreatorSoftware.Version": "1.0.0",
+            "Document.Type": "timesheet",
+            "DocumentEssentials": [
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Staff.Id",
+                "Location": {
+                  "Height": 35,
+                  "Left": 451,
+                  "Page": 1,
+                  "Top": 766,
+                  "Width": 54
+                },
+                "Text": "123",
+                "Value": "123"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Staff.Name",
+                "Location": {
+                  "Height": 34,
+                  "Left": 457,
+                  "Page": 1,
+                  "Top": 818,
+                  "Width": 183
+                },
+                "Text": "Max Muster",
+                "Value": "Max Muster"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "ConstructionSite.String",
+                "Location": {
+                  "Height": 36,
+                  "Left": 355,
+                  "Page": 1,
+                  "Top": 901,
+                  "Width": 125
+                },
+                "Text": "BluDelta",
+                "Value": "BluDelta"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Customer.Name",
+                "Location": null,
+                "Text": "Blumatix",
+                "Value": "Blumatix"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Signature.Bool",
+                "Location": null,
+                "Text": "False",
+                "Value": "false"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Total.Duration",
+                "Location": null,
+                "Text": "38.5",
+                "Value": "38.5"
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": null,
+                "Label": "Info.String",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Date",
+                    "Location": {
+                      "Height": 28,
+                      "Left": 303,
+                      "Page": 1,
+                      "Top": 365,
+                      "Width": 159
+                    },
+                    "Text": "14.04.2025",
+                    "Value": "2025-04-14"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Start.Time",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "08:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "End.Time",
+                    "Location": null,
+                    "Text": "17",
+                    "Value": "17:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Duration",
+                    "Location": null,
+                    "Text": "8.5",
+                    "Value": "8.5"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Info.String",
+                    "Location": null,
+                    "Text": "123/4567",
+                    "Value": "123/4567"
+                  }
+                ],
+                "Label": "WorkDay.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Date",
+                    "Location": {
+                      "Height": 26,
+                      "Left": 303,
+                      "Page": 1,
+                      "Top": 408,
+                      "Width": 156
+                    },
+                    "Text": "15.04.2025",
+                    "Value": "2025-04-15"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Start.Time",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "08:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "End.Time",
+                    "Location": null,
+                    "Text": "17",
+                    "Value": "17:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Duration",
+                    "Location": null,
+                    "Text": "8.5",
+                    "Value": "8.5"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Info.String",
+                    "Location": null,
+                    "Text": "123/4567",
+                    "Value": "123/4567"
+                  }
+                ],
+                "Label": "WorkDay.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Date",
+                    "Location": {
+                      "Height": 29,
+                      "Left": 302,
+                      "Page": 1,
+                      "Top": 450,
+                      "Width": 157
+                    },
+                    "Text": "16.04.2025",
+                    "Value": "2025-04-16"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Start.Time",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "08:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "End.Time",
+                    "Location": null,
+                    "Text": "17",
+                    "Value": "17:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Duration",
+                    "Location": null,
+                    "Text": "8.5",
+                    "Value": "8.5"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Info.String",
+                    "Location": null,
+                    "Text": "123/4567",
+                    "Value": "123/4567"
+                  }
+                ],
+                "Label": "WorkDay.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Date",
+                    "Location": {
+                      "Height": 30,
+                      "Left": 302,
+                      "Page": 1,
+                      "Top": 492,
+                      "Width": 157
+                    },
+                    "Text": "17.04.2025",
+                    "Value": "2025-04-17"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Start.Time",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "08:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "End.Time",
+                    "Location": null,
+                    "Text": "17",
+                    "Value": "17:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Duration",
+                    "Location": null,
+                    "Text": "8.5",
+                    "Value": "8.5"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Info.String",
+                    "Location": null,
+                    "Text": "123/4567",
+                    "Value": "123/4567"
+                  }
+                ],
+                "Label": "WorkDay.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 0.85,
+                "ConfidenceThreshold": -1.0,
+                "Items": [
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Date",
+                    "Location": {
+                      "Height": 28,
+                      "Left": 302,
+                      "Page": 1,
+                      "Top": 536,
+                      "Width": 158
+                    },
+                    "Text": "18.04.2025",
+                    "Value": "2025-04-18"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Start.Time",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "08:00"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "End.Time",
+                    "Location": null,
+                    "Text": "12:30",
+                    "Value": "12:30"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Total.Duration",
+                    "Location": null,
+                    "Text": "4.5",
+                    "Value": "4.5"
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Info.String",
+                    "Location": null,
+                    "Text": "123/4567",
+                    "Value": "123/4567"
+                  }
+                ],
+                "Label": "WorkDay.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              }
+            ],
+            "DocumentProvider.Name": "blumatix",
+            "Pages": [
+              {
+                "AppliedRotationDegreesClockwise": 0,
+                "Dpi": 0,
+                "Height": 1516,
+                "Id": 1,
+                "Width": 1999
+              }
+            ]
           },
-          {
-            "Label": "Start.Time",
-            "Text": "8",
-            "Value": "08:00"
-          },
-          {
-            "Label": "End.Time",
-            "Text": "17",
-            "Value": "17:00"
-          },
-          {
-            "Label": "Total.Duration",
-            "Text": "8.5",
-            "Value": "8.5"
-          },
-          {
-            "Label": "Info.String",
-            "Text": "123/4567",
-            "Value": "123/4567"
+          "ResultState": {
+            "Code": "200",
+            "Message": "OK"
           }
-        ],
-        "Label": "WorkDay.Item"
-      },
-      {
-        "Items": [
-          {
-            "Label": "Date",
-            "Text": "15.04.2025",
-            "Value": "2025-04-15"
-          },
-          {
-            "Label": "Start.Time",
-            "Text": "8",
-            "Value": "08:00"
-          },
-          {
-            "Label": "End.Time",
-            "Text": "17",
-            "Value": "17:00"
-          },
-          {
-            "Label": "Total.Duration",
-            "Text": "8.5",
-            "Value": "8.5"
-          },
-          {
-            "Label": "Info.String",
-            "Text": "123/4567",
-            "Value": "123/4567"
-          }
-        ],
-        "Label": "WorkDay.Item"
-      },
-      {
-        "Items": [
-          {
-            "Label": "Date",
-            "Text": "16.04.2025",
-            "Value": "2025-04-16"
-          },
-          {
-            "Label": "Start.Time",
-            "Text": "8",
-            "Value": "08:00"
-          },
-          {
-            "Label": "End.Time",
-            "Text": "17",
-            "Value": "17:00"
-          },
-          {
-            "Label": "Total.Duration",
-            "Text": "8.5",
-            "Value": "8.5"
-          },
-          {
-            "Label": "Info.String",
-            "Text": "123/4567",
-            "Value": "123/4567"
-          }
-        ],
-        "Label": "WorkDay.Item"
-      },
-      {
-        "Items": [
-          {
-            "Label": "Date",
-            "Text": "17.04.2025",
-            "Value": "2025-04-17"
-          },
-          {
-            "Label": "Start.Time",
-            "Text": "8",
-            "Value": "08:00"
-          },
-          {
-            "Label": "End.Time",
-            "Text": "17",
-            "Value": "17:00"
-          },
-          {
-            "Label": "Total.Duration",
-            "Text": "8.5",
-            "Value": "8.5"
-          },
-          {
-            "Label": "Info.String",
-            "Text": "123/4567",
-            "Value": "123/4567"
-          }
-        ],
-        "Label": "WorkDay.Item"
-      },
-      {
-        "Items": [
-          {
-            "Label": "Date",
-            "Text": "18.04.2025",
-            "Value": "2025-04-18"
-          },
-          {
-            "Label": "Start.Time",
-            "Text": "8",
-            "Value": "08:00"
-          },
-          {
-            "Label": "End.Time",
-            "Text": "12:30",
-            "Value": "12:30"
-          },
-          {
-            "Label": "Total.Duration",
-            "Text": "4.5",
-            "Value": "4.5"
-          },
-          {
-            "Label": "Info.String",
-            "Text": "123/4567",
-            "Value": "123/4567"
-          }
-        ],
-        "Label": "WorkDay.Item"
+        }
       }
     ],
-    "DocumentProvider.Name": "blumatix",
-    "DocumentTexts": [
-      {
-        "Line": {
-          "Location": {
-            "Height": 44,
-            "Left": 1540,
-            "Page": 1,
-            "Top": 101,
-            "Width": 260
-          },
-          "Text": "blumatix",
-          "Words": [
-            {
-              "Location": {
-                "Height": 44,
-                "Left": 1540,
-                "Page": 1,
-                "Top": 101,
-                "Width": 260
-              },
-              "Text": "blumatix"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 34,
-            "Left": 210,
-            "Page": 1,
-            "Top": 205,
-            "Width": 492
-          },
-          "Text": "Wochenarbeitszeitnachweis",
-          "Words": [
-            {
-              "Location": {
-                "Height": 34,
-                "Left": 210,
-                "Page": 1,
-                "Top": 205,
-                "Width": 492
-              },
-              "Text": "Wochenarbeitszeitnachweis"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 216,
-            "Page": 1,
-            "Top": 256,
-            "Width": 52
-          },
-          "Text": "Tag",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 216,
-                "Page": 1,
-                "Top": 256,
-                "Width": 52
-              },
-              "Text": "Tag"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 27,
-            "Left": 304,
-            "Page": 1,
-            "Top": 256,
-            "Width": 86
-          },
-          "Text": "Datum",
-          "Words": [
-            {
-              "Location": {
-                "Height": 27,
-                "Left": 304,
-                "Page": 1,
-                "Top": 256,
-                "Width": 86
-              },
-              "Text": "Datum"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 503,
-            "Page": 1,
-            "Top": 256,
-            "Width": 137
-          },
-          "Text": "Arbeitszeit",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 503,
-                "Page": 1,
-                "Top": 256,
-                "Width": 137
-              },
-              "Text": "Arbeitszeit"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 22,
-            "Left": 503,
-            "Page": 1,
-            "Top": 295,
-            "Width": 51
-          },
-          "Text": "von",
-          "Words": [
-            {
-              "Location": {
-                "Height": 22,
-                "Left": 503,
-                "Page": 1,
-                "Top": 295,
-                "Width": 51
-              },
-              "Text": "von"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 25,
-            "Left": 594,
-            "Page": 1,
-            "Top": 291,
-            "Width": 38
-          },
-          "Text": "bis",
-          "Words": [
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 594,
-                "Page": 1,
-                "Top": 291,
-                "Width": 38
-              },
-              "Text": "bis"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 27,
-            "Left": 796,
-            "Page": 1,
-            "Top": 256,
-            "Width": 94
-          },
-          "Text": "Stunde",
-          "Words": [
-            {
-              "Location": {
-                "Height": 27,
-                "Left": 796,
-                "Page": 1,
-                "Top": 256,
-                "Width": 94
-              },
-              "Text": "Stunde"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 21,
-            "Left": 797,
-            "Page": 1,
-            "Top": 295,
-            "Width": 18
-          },
-          "Text": "n",
-          "Words": [
-            {
-              "Location": {
-                "Height": 21,
-                "Left": 797,
-                "Page": 1,
-                "Top": 295,
-                "Width": 18
-              },
-              "Text": "n"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 795,
-            "Page": 1,
-            "Top": 328,
-            "Width": 99
-          },
-          "Text": "gesamt",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 795,
-                "Page": 1,
-                "Top": 328,
-                "Width": 99
-              },
-              "Text": "gesamt"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 27,
-            "Left": 927,
-            "Page": 1,
-            "Top": 256,
-            "Width": 100
-          },
-          "Text": "Info für",
-          "Words": [
-            {
-              "Location": {
-                "Height": 27,
-                "Left": 927,
-                "Page": 1,
-                "Top": 256,
-                "Width": 53
-              },
-              "Text": "Info"
-            },
-            {
-              "Location": {
-                "Height": 27,
-                "Left": 988,
-                "Page": 1,
-                "Top": 256,
-                "Width": 39
-              },
-              "Text": "für"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 34,
-            "Left": 927,
-            "Page": 1,
-            "Top": 289,
-            "Width": 223
-          },
-          "Text": "Lohnverrechnung",
-          "Words": [
-            {
-              "Location": {
-                "Height": 34,
-                "Left": 927,
-                "Page": 1,
-                "Top": 289,
-                "Width": 223
-              },
-              "Text": "Lohnverrechnung"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 217,
-            "Page": 1,
-            "Top": 366,
-            "Width": 45
-          },
-          "Text": "MO",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 217,
-                "Page": 1,
-                "Top": 366,
-                "Width": 45
-              },
-              "Text": "MO"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 303,
-            "Page": 1,
-            "Top": 365,
-            "Width": 159
-          },
-          "Text": "14.04.2025",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 303,
-                "Page": 1,
-                "Top": 365,
-                "Width": 159
-              },
-              "Text": "14.04.2025"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 31,
-            "Left": 504,
-            "Page": 1,
-            "Top": 362,
-            "Width": 120
-          },
-          "Text": "8-17 Uhr",
-          "Words": [
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 504,
-                "Page": 1,
-                "Top": 362,
-                "Width": 60
-              },
-              "Text": "8-17"
-            },
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 574,
-                "Page": 1,
-                "Top": 363,
-                "Width": 50
-              },
-              "Text": "Uhr"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 29,
-            "Left": 795,
-            "Page": 1,
-            "Top": 365,
-            "Width": 44
-          },
-          "Text": "8,5",
-          "Words": [
-            {
-              "Location": {
-                "Height": 29,
-                "Left": 795,
-                "Page": 1,
-                "Top": 365,
-                "Width": 44
-              },
-              "Text": "8,5"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 928,
-            "Page": 1,
-            "Top": 365,
-            "Width": 127
-          },
-          "Text": "123/4567",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 928,
-                "Page": 1,
-                "Top": 365,
-                "Width": 127
-              },
-              "Text": "123/4567"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 218,
-            "Page": 1,
-            "Top": 410,
-            "Width": 34
-          },
-          "Text": "DI",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 218,
-                "Page": 1,
-                "Top": 410,
-                "Width": 34
-              },
-              "Text": "DI"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 303,
-            "Page": 1,
-            "Top": 408,
-            "Width": 156
-          },
-          "Text": "15.04.2025",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 303,
-                "Page": 1,
-                "Top": 408,
-                "Width": 156
-              },
-              "Text": "15.04.2025"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 503,
-            "Page": 1,
-            "Top": 405,
-            "Width": 122
-          },
-          "Text": "8-17 Uhr",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 503,
-                "Page": 1,
-                "Top": 405,
-                "Width": 61
-              },
-              "Text": "8-17"
-            },
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 574,
-                "Page": 1,
-                "Top": 405,
-                "Width": 51
-              },
-              "Text": "Uhr"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 795,
-            "Page": 1,
-            "Top": 408,
-            "Width": 45
-          },
-          "Text": "8,5",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 795,
-                "Page": 1,
-                "Top": 408,
-                "Width": 45
-              },
-              "Text": "8,5"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 929,
-            "Page": 1,
-            "Top": 407,
-            "Width": 127
-          },
-          "Text": "123/4567",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 929,
-                "Page": 1,
-                "Top": 407,
-                "Width": 127
-              },
-              "Text": "123/4567"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 218,
-            "Page": 1,
-            "Top": 452,
-            "Width": 35
-          },
-          "Text": "MI",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 218,
-                "Page": 1,
-                "Top": 452,
-                "Width": 35
-              },
-              "Text": "MI"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 29,
-            "Left": 302,
-            "Page": 1,
-            "Top": 450,
-            "Width": 157
-          },
-          "Text": "16.04.2025",
-          "Words": [
-            {
-              "Location": {
-                "Height": 29,
-                "Left": 302,
-                "Page": 1,
-                "Top": 450,
-                "Width": 157
-              },
-              "Text": "16.04.2025"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 504,
-            "Page": 1,
-            "Top": 448,
-            "Width": 121
-          },
-          "Text": "8-17 Uhr",
-          "Words": [
-            {
-              "Location": {
-                "Height": 29,
-                "Left": 504,
-                "Page": 1,
-                "Top": 448,
-                "Width": 60
-              },
-              "Text": "8-17"
-            },
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 574,
-                "Page": 1,
-                "Top": 448,
-                "Width": 51
-              },
-              "Text": "Uhr"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 798,
-            "Page": 1,
-            "Top": 451,
-            "Width": 37
-          },
-          "Text": "8,5",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 798,
-                "Page": 1,
-                "Top": 451,
-                "Width": 37
-              },
-              "Text": "8,5"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 928,
-            "Page": 1,
-            "Top": 449,
-            "Width": 127
-          },
-          "Text": "123/4567",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 928,
-                "Page": 1,
-                "Top": 449,
-                "Width": 127
-              },
-              "Text": "123/4567"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 25,
-            "Left": 217,
-            "Page": 1,
-            "Top": 496,
-            "Width": 43
-          },
-          "Text": "DO",
-          "Words": [
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 217,
-                "Page": 1,
-                "Top": 496,
-                "Width": 43
-              },
-              "Text": "DO"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 302,
-            "Page": 1,
-            "Top": 492,
-            "Width": 157
-          },
-          "Text": "17.04.2025",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 302,
-                "Page": 1,
-                "Top": 492,
-                "Width": 157
-              },
-              "Text": "17.04.2025"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 503,
-            "Page": 1,
-            "Top": 491,
-            "Width": 121
-          },
-          "Text": "8-17 Uhr",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 503,
-                "Page": 1,
-                "Top": 491,
-                "Width": 61
-              },
-              "Text": "8-17"
-            },
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 574,
-                "Page": 1,
-                "Top": 491,
-                "Width": 50
-              },
-              "Text": "Uhr"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 29,
-            "Left": 795,
-            "Page": 1,
-            "Top": 494,
-            "Width": 46
-          },
-          "Text": "8,5",
-          "Words": [
-            {
-              "Location": {
-                "Height": 29,
-                "Left": 795,
-                "Page": 1,
-                "Top": 494,
-                "Width": 46
-              },
-              "Text": "8,5"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 928,
-            "Page": 1,
-            "Top": 493,
-            "Width": 127
-          },
-          "Text": "123/4567",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 928,
-                "Page": 1,
-                "Top": 493,
-                "Width": 127
-              },
-              "Text": "123/4567"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 26,
-            "Left": 217,
-            "Page": 1,
-            "Top": 538,
-            "Width": 35
-          },
-          "Text": "FR",
-          "Words": [
-            {
-              "Location": {
-                "Height": 26,
-                "Left": 217,
-                "Page": 1,
-                "Top": 538,
-                "Width": 35
-              },
-              "Text": "FR"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 302,
-            "Page": 1,
-            "Top": 536,
-            "Width": 158
-          },
-          "Text": "18.04.2025",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 302,
-                "Page": 1,
-                "Top": 536,
-                "Width": 158
-              },
-              "Text": "18.04.2025"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 31,
-            "Left": 504,
-            "Page": 1,
-            "Top": 534,
-            "Width": 167
-          },
-          "Text": "8-12:30 Uhr",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 504,
-                "Page": 1,
-                "Top": 534,
-                "Width": 105
-              },
-              "Text": "8-12:30"
-            },
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 619,
-                "Page": 1,
-                "Top": 534,
-                "Width": 52
-              },
-              "Text": "Uhr"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 30,
-            "Left": 798,
-            "Page": 1,
-            "Top": 536,
-            "Width": 37
-          },
-          "Text": "4,5",
-          "Words": [
-            {
-              "Location": {
-                "Height": 30,
-                "Left": 798,
-                "Page": 1,
-                "Top": 536,
-                "Width": 37
-              },
-              "Text": "4,5"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 29,
-            "Left": 928,
-            "Page": 1,
-            "Top": 536,
-            "Width": 127
-          },
-          "Text": "123/4567",
-          "Words": [
-            {
-              "Location": {
-                "Height": 29,
-                "Left": 928,
-                "Page": 1,
-                "Top": 536,
-                "Width": 127
-              },
-              "Text": "123/4567"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 25,
-            "Left": 217,
-            "Page": 1,
-            "Top": 580,
-            "Width": 37
-          },
-          "Text": "SA",
-          "Words": [
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 217,
-                "Page": 1,
-                "Top": 580,
-                "Width": 37
-              },
-              "Text": "SA"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 28,
-            "Left": 215,
-            "Page": 1,
-            "Top": 617,
-            "Width": 37
-          },
-          "Text": "SO",
-          "Words": [
-            {
-              "Location": {
-                "Height": 28,
-                "Left": 215,
-                "Page": 1,
-                "Top": 617,
-                "Width": 37
-              },
-              "Text": "SO"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 33,
-            "Left": 218,
-            "Page": 1,
-            "Top": 655,
-            "Width": 379
-          },
-          "Text": "Gesamtstunden dieser Woche",
-          "Words": [
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 218,
-                "Page": 1,
-                "Top": 657,
-                "Width": 198
-              },
-              "Text": "Gesamtstunden"
-            },
-            {
-              "Location": {
-                "Height": 32,
-                "Left": 424,
-                "Page": 1,
-                "Top": 656,
-                "Width": 77
-              },
-              "Text": "dieser"
-            },
-            {
-              "Location": {
-                "Height": 33,
-                "Left": 508,
-                "Page": 1,
-                "Top": 655,
-                "Width": 89
-              },
-              "Text": "Woche"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 35,
-            "Left": 925,
-            "Page": 1,
-            "Top": 655,
-            "Width": 177
-          },
-          "Text": "38,5 Stunden",
-          "Words": [
-            {
-              "Location": {
-                "Height": 33,
-                "Left": 925,
-                "Page": 1,
-                "Top": 655,
-                "Width": 57
-              },
-              "Text": "38,5"
-            },
-            {
-              "Location": {
-                "Height": 33,
-                "Left": 993,
-                "Page": 1,
-                "Top": 657,
-                "Width": 109
-              },
-              "Text": "Stunden"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 835,
-            "Left": 35,
-            "Page": 1,
-            "Top": 617,
-            "Width": 51
-          },
-          "Text": "Stundenzettel an: office@bumatix.com",
-          "Words": [
-            {
-              "Location": {
-                "Height": 296,
-                "Left": 35,
-                "Page": 1,
-                "Top": 1156,
-                "Width": 50
-              },
-              "Text": "Stundenzettel"
-            },
-            {
-              "Location": {
-                "Height": 62,
-                "Left": 35,
-                "Page": 1,
-                "Top": 1076,
-                "Width": 51
-              },
-              "Text": "an:"
-            },
-            {
-              "Location": {
-                "Height": 444,
-                "Left": 35,
-                "Page": 1,
-                "Top": 617,
-                "Width": 51
-              },
-              "Text": "office@bumatix.com"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 37,
-            "Left": 218,
-            "Page": 1,
-            "Top": 766,
-            "Width": 287
-          },
-          "Text": "Personalnummer: 123",
-          "Words": [
-            {
-              "Location": {
-                "Height": 37,
-                "Left": 218,
-                "Page": 1,
-                "Top": 766,
-                "Width": 227
-              },
-              "Text": "Personalnummer:"
-            },
-            {
-              "Location": {
-                "Height": 35,
-                "Left": 451,
-                "Page": 1,
-                "Top": 766,
-                "Width": 54
-              },
-              "Text": "123"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 34,
-            "Left": 215,
-            "Page": 1,
-            "Top": 818,
-            "Width": 425
-          },
-          "Text": "Name Mitarbeiter: Max Muster",
-          "Words": [
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 215,
-                "Page": 1,
-                "Top": 819,
-                "Width": 75
-              },
-              "Text": "Name"
-            },
-            {
-              "Location": {
-                "Height": 33,
-                "Left": 296,
-                "Page": 1,
-                "Top": 818,
-                "Width": 148
-              },
-              "Text": "Mitarbeiter:"
-            },
-            {
-              "Location": {
-                "Height": 33,
-                "Left": 457,
-                "Page": 1,
-                "Top": 818,
-                "Width": 65
-              },
-              "Text": "Max"
-            },
-            {
-              "Location": {
-                "Height": 34,
-                "Left": 531,
-                "Page": 1,
-                "Top": 818,
-                "Width": 109
-              },
-              "Text": "Muster"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 38,
-            "Left": 214,
-            "Page": 1,
-            "Top": 901,
-            "Width": 266
-          },
-          "Text": "Baustelle: BluDelta",
-          "Words": [
-            {
-              "Location": {
-                "Height": 38,
-                "Left": 214,
-                "Page": 1,
-                "Top": 901,
-                "Width": 126
-              },
-              "Text": "Baustelle:"
-            },
-            {
-              "Location": {
-                "Height": 36,
-                "Left": 355,
-                "Page": 1,
-                "Top": 901,
-                "Width": 125
-              },
-              "Text": "BluDelta"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 37,
-            "Left": 216,
-            "Page": 1,
-            "Top": 951,
-            "Width": 238
-          },
-          "Text": "Kunde: Blumatix",
-          "Words": [
-            {
-              "Location": {
-                "Height": 37,
-                "Left": 216,
-                "Page": 1,
-                "Top": 951,
-                "Width": 90
-              },
-              "Text": "Kunde:"
-            },
-            {
-              "Location": {
-                "Height": 36,
-                "Left": 320,
-                "Page": 1,
-                "Top": 951,
-                "Width": 134
-              },
-              "Text": "Blumatix"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 34,
-            "Left": 217,
-            "Page": 1,
-            "Top": 1000,
-            "Width": 251
-          },
-          "Text": "Unterschrift Kunde:",
-          "Words": [
-            {
-              "Location": {
-                "Height": 34,
-                "Left": 217,
-                "Page": 1,
-                "Top": 1000,
-                "Width": 150
-              },
-              "Text": "Unterschrift"
-            },
-            {
-              "Location": {
-                "Height": 32,
-                "Left": 375,
-                "Page": 1,
-                "Top": 1001,
-                "Width": 93
-              },
-              "Text": "Kunde:"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 47,
-            "Left": 219,
-            "Page": 1,
-            "Top": 1042,
-            "Width": 594
-          },
-          "Text": "18.04.2025, Maria Beispiel",
-          "Words": [
-            {
-              "Location": {
-                "Height": 41,
-                "Left": 219,
-                "Page": 1,
-                "Top": 1044,
-                "Width": 242
-              },
-              "Text": "18.04.2025,"
-            },
-            {
-              "Location": {
-                "Height": 45,
-                "Left": 478,
-                "Page": 1,
-                "Top": 1042,
-                "Width": 143
-              },
-              "Text": "Maria"
-            },
-            {
-              "Location": {
-                "Height": 47,
-                "Left": 634,
-                "Page": 1,
-                "Top": 1042,
-                "Width": 179
-              },
-              "Text": "Beispiel"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 56,
-            "Left": 926,
-            "Page": 1,
-            "Top": 978,
-            "Width": 243
-          },
-          "Text": "Blumatix Intelligence GmbH",
-          "Words": [
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 926,
-                "Page": 1,
-                "Top": 1003,
-                "Width": 76
-              },
-              "Text": "Blumatix"
-            },
-            {
-              "Location": {
-                "Height": 37,
-                "Left": 1004,
-                "Page": 1,
-                "Top": 987,
-                "Width": 103
-              },
-              "Text": "Intelligence"
-            },
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 1110,
-                "Page": 1,
-                "Top": 978,
-                "Width": 59
-              },
-              "Text": "GmbH"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 61,
-            "Left": 931,
-            "Page": 1,
-            "Top": 1000,
-            "Width": 284
-          },
-          "Text": "Schwarzstrasse 48 / A-5020 Salzburg",
-          "Words": [
-            {
-              "Location": {
-                "Height": 36,
-                "Left": 931,
-                "Page": 1,
-                "Top": 1025,
-                "Width": 121
-              },
-              "Text": "Schwarzstrasse"
-            },
-            {
-              "Location": {
-                "Height": 22,
-                "Left": 1055,
-                "Page": 1,
-                "Top": 1021,
-                "Width": 19
-              },
-              "Text": "48"
-            },
-            {
-              "Location": {
-                "Height": 20,
-                "Left": 1077,
-                "Page": 1,
-                "Top": 1020,
-                "Width": 9
-              },
-              "Text": "/"
-            },
-            {
-              "Location": {
-                "Height": 27,
-                "Left": 1088,
-                "Page": 1,
-                "Top": 1011,
-                "Width": 55
-              },
-              "Text": "A-5020"
-            },
-            {
-              "Location": {
-                "Height": 31,
-                "Left": 1145,
-                "Page": 1,
-                "Top": 1000,
-                "Width": 70
-              },
-              "Text": "Salzburg"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 35,
-            "Left": 932,
-            "Page": 1,
-            "Top": 1045,
-            "Width": 128
-          },
-          "Text": "+43.662.243410",
-          "Words": [
-            {
-              "Location": {
-                "Height": 35,
-                "Left": 932,
-                "Page": 1,
-                "Top": 1045,
-                "Width": 128
-              },
-              "Text": "+43.662.243410"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 40,
-            "Left": 936,
-            "Page": 1,
-            "Top": 1061,
-            "Width": 165
-          },
-          "Text": "office@blumatix.com",
-          "Words": [
-            {
-              "Location": {
-                "Height": 40,
-                "Left": 936,
-                "Page": 1,
-                "Top": 1061,
-                "Width": 165
-              },
-              "Text": "office@blumatix.com"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 37,
-            "Left": 939,
-            "Page": 1,
-            "Top": 1084,
-            "Width": 150
-          },
-          "Text": "www.blumatix.com",
-          "Words": [
-            {
-              "Location": {
-                "Height": 37,
-                "Left": 939,
-                "Page": 1,
-                "Top": 1084,
-                "Width": 150
-              },
-              "Text": "www.blumatix.com"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 24,
-            "Left": 218,
-            "Page": 1,
-            "Top": 1135,
-            "Width": 384
-          },
-          "Text": "Datum, Unterschrift, Stempel des Kunden",
-          "Words": [
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 218,
-                "Page": 1,
-                "Top": 1135,
-                "Width": 68
-              },
-              "Text": "Datum,"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 290,
-                "Page": 1,
-                "Top": 1135,
-                "Width": 118
-              },
-              "Text": "Unterschrift,"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 412,
-                "Page": 1,
-                "Top": 1135,
-                "Width": 76
-              },
-              "Text": "Stempel"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 492,
-                "Page": 1,
-                "Top": 1135,
-                "Width": 32
-              },
-              "Text": "des"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 529,
-                "Page": 1,
-                "Top": 1135,
-                "Width": 73
-              },
-              "Text": "Kunden"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 25,
-            "Left": 218,
-            "Page": 1,
-            "Top": 1160,
-            "Width": 1403
-          },
-          "Text": "Mit meiner Unterschrift bestätige ich die Richtigkeit der angegebenen Arbeitszeiten und erkläre mich mit der Abrechnung auf dieser Basis einverstanden.",
-          "Words": [
-            {
-              "Location": {
-                "Height": 23,
-                "Left": 218,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 27
-              },
-              "Text": "Mit"
-            },
-            {
-              "Location": {
-                "Height": 23,
-                "Left": 250,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 67
-              },
-              "Text": "meiner"
-            },
-            {
-              "Location": {
-                "Height": 23,
-                "Left": 323,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 107
-              },
-              "Text": "Unterschrift"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 437,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 81
-              },
-              "Text": "bestätige"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 523,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 29
-              },
-              "Text": "ich"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 559,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 27
-              },
-              "Text": "die"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 593,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 95
-              },
-              "Text": "Richtigkeit"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 694,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 31
-              },
-              "Text": "der"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 731,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 123
-              },
-              "Text": "angegebenen"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 861,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 117
-              },
-              "Text": "Arbeitszeiten"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 986,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 33
-              },
-              "Text": "und"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 1027,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 63
-              },
-              "Text": "erkläre"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 1097,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 42
-              },
-              "Text": "mich"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 1146,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 30
-              },
-              "Text": "mit"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 1182,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 30
-              },
-              "Text": "der"
-            },
-            {
-              "Location": {
-                "Height": 25,
-                "Left": 1218,
-                "Page": 1,
-                "Top": 1160,
-                "Width": 109
-              },
-              "Text": "Abrechnung"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 1334,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 31
-              },
-              "Text": "auf"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 1370,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 56
-              },
-              "Text": "dieser"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 1432,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 46
-              },
-              "Text": "Basis"
-            },
-            {
-              "Location": {
-                "Height": 24,
-                "Left": 1484,
-                "Page": 1,
-                "Top": 1161,
-                "Width": 137
-              },
-              "Text": "einverstanden."
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 40,
-            "Left": 1502,
-            "Page": 1,
-            "Top": 1412,
-            "Width": 270
-          },
-          "Text": "BLU DELTA",
-          "Words": [
-            {
-              "Location": {
-                "Height": 39,
-                "Left": 1502,
-                "Page": 1,
-                "Top": 1413,
-                "Width": 98
-              },
-              "Text": "BLU"
-            },
-            {
-              "Location": {
-                "Height": 40,
-                "Left": 1614,
-                "Page": 1,
-                "Top": 1412,
-                "Width": 158
-              },
-              "Text": "DELTA"
-            }
-          ]
-        }
-      },
-      {
-        "Line": {
-          "Location": {
-            "Height": 21,
-            "Left": 1501,
-            "Page": 1,
-            "Top": 1458,
-            "Width": 300
-          },
-          "Text": "understands documents",
-          "Words": [
-            {
-              "Location": {
-                "Height": 21,
-                "Left": 1501,
-                "Page": 1,
-                "Top": 1458,
-                "Width": 157
-              },
-              "Text": "understands"
-            },
-            {
-              "Location": {
-                "Height": 21,
-                "Left": 1663,
-                "Page": 1,
-                "Top": 1458,
-                "Width": 138
-              },
-              "Text": "documents"
-            }
-          ]
-        }
-      }
-    ]
-  }
+    "OriginalFiles": null
+  },
+  "History": [
+    {
+      "State": "Running",
+      "Timestamp": "2026-01-23T15:10:16.5639096Z"
+    },
+    {
+      "State": "Finished",
+      "Timestamp": "2026-01-23T15:10:21.7802712Z"
+    }
+  ]
+}

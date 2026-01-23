@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "$id": "https://schemas.blumatix.com/bludelta/bludoc/v1.4.1/schema.json",
+  "$id": "https://schemas.blumatix.com/bludelta/bludoc/v1.0.0/schema.json",
   "title": "BluDoc Schema",
   "description": "BluDoc is a multi-layer document description format enabling exchange with AI in mind",
   "$ref": "#/definitions/BluDoc",
@@ -55,35 +55,14 @@
             "$ref": "#/definitions/DocumentEssential"
           },
           "description": "An array of essential document details."
-        },
-        "DocumentTexts": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "Line": {
-                "$ref": "#/definitions/Line"
-              }
-            },
-            "required": [ "Line" ]
-          },
-          "description": "An array of lines of text in the document.",
-          "additionalProperties": false,
-          "title": "LineWrapper"
-        },
-        "DocumentBinaries": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/DocumentBinary"
-          },
-          "description": "An array of binary representation of the document."
         }
       },
       "required": [
         "BluDoc.Version",
         "Created.DateTime",
         "DocumentProvider.Name",
-        "Document.Type"
+        "Document.Type",
+        "DocumentEssentials"
       ],
       "title": "BluDoc",
       "description": "The root object representing a BluDoc document."
@@ -97,33 +76,58 @@
           "description": "The label of the document essential."
         },
         "Value": {
-          "type": [ "string", "null" ],
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ],
           "description": "The value of the document essential, if applicable."
         },
         "Text": {
-          "type": [ "string", "null" ],
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ],
           "description": "The text representation of the document essential, if applicable."
         },
         "Location": {
-          "type": [ "null", "object" ],
-          "$ref": "#/definitions/Location",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Location"
+            },
+            {
+              "type": "null"
+            }
+          ],
           "description": "The location details of the document essential, if applicable."
         },
         "Confidence": {
-          "type": "number",
-          "minimum": -1,
-          "maximum": 1,
-          "description": "The confidence level (0.0-1.0) associated with the document essential. Score of -1 indicates no confidence score."
+          "type": "integer",
+          "description": "The confidence level associated with the document essential."
         },
         "ConfidenceThreshold": {
           "type": "number",
           "description": "The threshold value used to determine the confidence level."
         },
         "Items": {
-          "type": [ "array", "null" ],
-          "items": {
-            "$ref": "#/definitions/DocumentEssential"
-          },
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DocumentEssential"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
           "description": "An array of sub-items representing additional document essentials, if applicable."
         }
       },
@@ -132,92 +136,8 @@
       ],
       "title": "DocumentEssential"
     },
-    "DocumentBinary": {
-      "type": "object",
-      "properties": {
-        "ContentType": {
-          "type": "string",
-          "description": "Describes the nature or purpose of the binary content, specifying how the content is intended to be used or its format characteristics."
-        },
-        "MediaType": {
-          "type": "string",
-          "description": "The media type of the binary content, e.g., image/png or application/pdf."
-        },
-        "FileName": {
-          "type": "string",
-          "description": "The file name of the content, e.g., attachment1.pdf"
-        },
-        "Name": {
-          "type": "string",
-          "description": "The name of the content, e.g., attachment1"
-        },
-        "Embedding": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "An array of Base64 encoded data strings. For multi-page images, each page is represented as a separate Base64 encoded string. For PDFs, the entire document, regardless of page count, is represented by a single Base64 encoded string."
-        },
-        "Reference": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri"
-          },
-          "description": "URL references to the binary content."
-        }
-      },
-      "required": [ "ContentType", "MediaType" ],
-      "oneOf": [
-        {
-          "required": [ "Embedding" ]
-        },
-        {
-          "required": [ "Reference" ]
-        }
-      ]
-    },
-    "Line": {
-      "type": "object",
-      "properties": {
-        "Text": {
-          "type": "string",
-          "description": "The concatenated text of all words in the line."
-        },
-        "Location": {
-          "type": "object",
-          "$ref": "#/definitions/Location",
-          "description": "The location details of the line."
-        },
-        "Words": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Word"
-          },
-          "description": "The individual words within the line."
-        }
-      },
-      "required": [ "Text", "Location", "Words" ],
-      "title": "Line"
-    },
-    "Word": {
-      "type": "object",
-      "properties": {
-        "Text": {
-          "type": "string",
-          "description": "The text of the word."
-        },
-        "Location": {
-          "type": "object",
-          "$ref": "#/definitions/Location",
-          "description": "The location details of the word."
-        }
-      },
-      "required": [ "Text", "Location" ],
-      "title": "Word"
-    },
     "Location": {
-      "type": [ "object", "null" ],
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "Page": {
@@ -254,7 +174,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "Id": {
+        "Page": {
           "type": "integer",
           "description": "The page number.",
           "minimum": 1
@@ -268,7 +188,8 @@
           "description": "The height of the page in pixels."
         },
         "Dpi": {
-          "type": "integer",
+          "type": "string",
+          "format": "integer",
           "description": "The dots per inch (DPI) of the page."
         },
         "Orientation": {
@@ -281,9 +202,10 @@
         "Width",
         "Height",
         "Dpi",
-        "Id"
+        "Page"
       ],
       "title": "Page"
     }
   }
 }
+  

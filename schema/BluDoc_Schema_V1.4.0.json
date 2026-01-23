@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "$id": "https://schemas.blumatix.com/bludelta/bludoc/v1.4.1/schema.json",
+  "$id": "https://schemas.blumatix.com/bludelta/bludoc/v1.4.0/schema.json",
   "title": "BluDoc Schema",
   "description": "BluDoc is a multi-layer document description format enabling exchange with AI in mind",
   "$ref": "#/definitions/BluDoc",
@@ -111,9 +111,9 @@
         },
         "Confidence": {
           "type": "number",
-          "minimum": -1,
+          "minimum": 0,
           "maximum": 1,
-          "description": "The confidence level (0.0-1.0) associated with the document essential. Score of -1 indicates no confidence score."
+          "description": "The confidence level associated with the document essential."
         },
         "ConfidenceThreshold": {
           "type": "number",
@@ -142,14 +142,6 @@
         "MediaType": {
           "type": "string",
           "description": "The media type of the binary content, e.g., image/png or application/pdf."
-        },
-        "FileName": {
-          "type": "string",
-          "description": "The file name of the content, e.g., attachment1.pdf"
-        },
-        "Name": {
-          "type": "string",
-          "description": "The name of the content, e.g., attachment1"
         },
         "Embedding": {
           "type": "array",
