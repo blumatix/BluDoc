@@ -1,8 +1,8 @@
 {
-  "JobId": "503a68ab-c5a8-4d9e-9345-76b7bab9ca00",
+  "JobId": "2ae50fa9-771c-455a-8e0a-ce62248a4b08",
   "CustomerId": "default-customer",
   "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T14:58:44.5766029Z",
+  "LastUpdated": "2026-01-23T16:34:07.2475764Z",
   "ErrorMessage": null,
   "ErrorCode": 0,
   "Result": {
@@ -87,11 +87,11 @@
   "History": [
     {
       "State": "Running",
-      "Timestamp": "2026-01-23T14:58:28.539325Z"
+      "Timestamp": "2026-01-23T16:33:50.2299582Z"
     },
     {
       "State": "Finished",
-      "Timestamp": "2026-01-23T14:58:44.5766029Z"
+      "Timestamp": "2026-01-23T16:34:07.2475764Z"
     }
   ]
 }

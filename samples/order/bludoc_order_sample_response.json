@@ -169,6 +169,13 @@
 							"Label": "Delivery.Date",
 							"Text": "05.05.2025",
 							"Value": "2025-05-05"
+						},
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Week",
+							"Text": "",
+							"Value": ""
 						}
 					],
 					"Label": "DeliveryDate.Item"
@@ -225,6 +232,13 @@
 							"Label": "Delivery.Date",
 							"Text": "05.05.2025",
 							"Value": "2025-05-05"
+						},
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Week",
+							"Text": "",
+							"Value": ""
 						}
 					],
 					"Label": "DeliveryDate.Item"
@@ -242,24 +256,38 @@
 					"Label": "Delivery.Date",
 					"Text": "05.05.2025",
 					"Value": "2025-05-05"
-				}
-			],
-			"Label": "DeliveryDate.Item"
-		},
-		{
-			"Confidence": 0.85,
-			"ConfidenceThreshold": -1,
-			"Items": [
+				},
 				{
 					"Confidence": 0.85,
 					"ConfidenceThreshold": -1,
-					"Label": "Delivery.Date",
-					"Text": "10.05.2025",
-					"Value": "2025-05-10"
+					"Label": "Delivery.Week",
+					"Text": "KW 19/2025",
+					"Value": "2025-W19"
 				}
 			],
 			"Label": "DeliveryDate.Item"
 		},
+				{
+					"Confidence": 0.85,
+					"ConfidenceThreshold": -1,
+					"Items": [
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Date",
+							"Text": "10.05.2025",
+							"Value": "2025-05-10"
+						},
+						{
+							"Confidence": 0.85,
+							"ConfidenceThreshold": -1,
+							"Label": "Delivery.Week",
+							"Text": "",
+							"Value": ""
+						}
+					],
+					"Label": "DeliveryDate.Item"
+				},
 		{
 			"Confidence": 0.85,
 			"ConfidenceThreshold": -1,

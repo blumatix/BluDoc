@@ -1,8 +1,8 @@
 {
-  "JobId": "465775f9-357d-454b-a054-86c26b0a68cb",
+  "JobId": "91e6f06a-4e3f-4a42-b39b-930631cc39ee",
   "CustomerId": "default-customer",
   "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T14:59:33.983577Z",
+  "LastUpdated": "2026-01-23T16:34:53.543795Z",
   "ErrorMessage": null,
   "ErrorCode": 0,
   "Result": {
@@ -15,7 +15,7 @@
         "Extraction": {
           "Result": {
             "BluDoc.Version": "1.5.0",
-            "Created.DateTime": "2026-01-23T14:59:33.8138477+00:00",
+            "Created.DateTime": "2026-01-23T16:34:53.3291134+00:00",
             "CreatorSoftware.Name": "DocumentWorkflow",
             "CreatorSoftware.Version": "1.0.0",
             "Document.Type": "orderconfirmation",
@@ -476,6 +476,15 @@
                     "Location": null,
                     "Text": "",
                     "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
                   }
                 ],
                 "Label": "Line.Item",
@@ -600,6 +609,15 @@
                     "Location": null,
                     "Text": "",
                     "Value": ""
+                  },
+                  {
+                    "Confidence": 0.85,
+                    "ConfidenceThreshold": -1.0,
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
                   }
                 ],
                 "Label": "Line.Item",
@@ -631,11 +649,11 @@
   "History": [
     {
       "State": "Running",
-      "Timestamp": "2026-01-23T14:59:26.9557002Z"
+      "Timestamp": "2026-01-23T16:34:46.3924135Z"
     },
     {
       "State": "Finished",
-      "Timestamp": "2026-01-23T14:59:33.983577Z"
+      "Timestamp": "2026-01-23T16:34:53.543795Z"
     }
   ]
 }
