@@ -1,440 +1,405 @@
 {
-  "JobId": "348395f8-4848-4a7d-add9-3ebe43555ea7",
-  "CustomerId": "default-customer",
-  "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T15:10:21.7802712Z",
-  "ErrorMessage": null,
-  "ErrorCode": 0,
-  "Result": {
-    "AdditionalContextData": {},
-    "Documents": [
-      {
-        "DocumentId": "bludoc-timesheet-sample.jpg",
-        "Grouping": null,
-        "Classification": null,
-        "Extraction": {
-          "Result": {
-            "BluDoc.Version": "1.5.0",
-            "Created.DateTime": "2026-01-23T15:10:21.5827587+00:00",
-            "CreatorSoftware.Name": "DocumentWorkflow",
-            "CreatorSoftware.Version": "1.0.0",
-            "Document.Type": "timesheet",
-            "DocumentEssentials": [
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Staff.Id",
-                "Location": {
-                  "Height": 35,
-                  "Left": 451,
-                  "Page": 1,
-                  "Top": 766,
-                  "Width": 54
-                },
-                "Text": "123",
-                "Value": "123"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Staff.Name",
-                "Location": {
-                  "Height": 34,
-                  "Left": 457,
-                  "Page": 1,
-                  "Top": 818,
-                  "Width": 183
-                },
-                "Text": "Max Muster",
-                "Value": "Max Muster"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "ConstructionSite.String",
-                "Location": {
-                  "Height": 36,
-                  "Left": 355,
-                  "Page": 1,
-                  "Top": 901,
-                  "Width": 125
-                },
-                "Text": "BluDelta",
-                "Value": "BluDelta"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Customer.Name",
-                "Location": null,
-                "Text": "Blumatix",
-                "Value": "Blumatix"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Signature.Bool",
-                "Location": null,
-                "Text": "False",
-                "Value": "false"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Total.Duration",
-                "Location": null,
-                "Text": "38.5",
-                "Value": "38.5"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Info.String",
-                "Location": null,
-                "Text": "",
-                "Value": ""
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Date",
-                    "Location": {
-                      "Height": 28,
-                      "Left": 303,
-                      "Page": 1,
-                      "Top": 365,
-                      "Width": 159
-                    },
-                    "Text": "14.04.2025",
-                    "Value": "2025-04-14"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Start.Time",
-                    "Location": null,
-                    "Text": "8",
-                    "Value": "08:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "End.Time",
-                    "Location": null,
-                    "Text": "17",
-                    "Value": "17:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Total.Duration",
-                    "Location": null,
-                    "Text": "8.5",
-                    "Value": "8.5"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Info.String",
-                    "Location": null,
-                    "Text": "123/4567",
-                    "Value": "123/4567"
-                  }
-                ],
-                "Label": "WorkDay.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Date",
-                    "Location": {
-                      "Height": 26,
-                      "Left": 303,
-                      "Page": 1,
-                      "Top": 408,
-                      "Width": 156
-                    },
-                    "Text": "15.04.2025",
-                    "Value": "2025-04-15"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Start.Time",
-                    "Location": null,
-                    "Text": "8",
-                    "Value": "08:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "End.Time",
-                    "Location": null,
-                    "Text": "17",
-                    "Value": "17:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Total.Duration",
-                    "Location": null,
-                    "Text": "8.5",
-                    "Value": "8.5"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Info.String",
-                    "Location": null,
-                    "Text": "123/4567",
-                    "Value": "123/4567"
-                  }
-                ],
-                "Label": "WorkDay.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Date",
-                    "Location": {
-                      "Height": 29,
-                      "Left": 302,
-                      "Page": 1,
-                      "Top": 450,
-                      "Width": 157
-                    },
-                    "Text": "16.04.2025",
-                    "Value": "2025-04-16"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Start.Time",
-                    "Location": null,
-                    "Text": "8",
-                    "Value": "08:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "End.Time",
-                    "Location": null,
-                    "Text": "17",
-                    "Value": "17:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Total.Duration",
-                    "Location": null,
-                    "Text": "8.5",
-                    "Value": "8.5"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Info.String",
-                    "Location": null,
-                    "Text": "123/4567",
-                    "Value": "123/4567"
-                  }
-                ],
-                "Label": "WorkDay.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Date",
-                    "Location": {
-                      "Height": 30,
-                      "Left": 302,
-                      "Page": 1,
-                      "Top": 492,
-                      "Width": 157
-                    },
-                    "Text": "17.04.2025",
-                    "Value": "2025-04-17"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Start.Time",
-                    "Location": null,
-                    "Text": "8",
-                    "Value": "08:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "End.Time",
-                    "Location": null,
-                    "Text": "17",
-                    "Value": "17:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Total.Duration",
-                    "Location": null,
-                    "Text": "8.5",
-                    "Value": "8.5"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Info.String",
-                    "Location": null,
-                    "Text": "123/4567",
-                    "Value": "123/4567"
-                  }
-                ],
-                "Label": "WorkDay.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Date",
-                    "Location": {
-                      "Height": 28,
-                      "Left": 302,
-                      "Page": 1,
-                      "Top": 536,
-                      "Width": 158
-                    },
-                    "Text": "18.04.2025",
-                    "Value": "2025-04-18"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Start.Time",
-                    "Location": null,
-                    "Text": "8",
-                    "Value": "08:00"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "End.Time",
-                    "Location": null,
-                    "Text": "12:30",
-                    "Value": "12:30"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Total.Duration",
-                    "Location": null,
-                    "Text": "4.5",
-                    "Value": "4.5"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Info.String",
-                    "Location": null,
-                    "Text": "123/4567",
-                    "Value": "123/4567"
-                  }
-                ],
-                "Label": "WorkDay.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              }
-            ],
-            "DocumentProvider.Name": "blumatix",
-            "Pages": [
-              {
-                "AppliedRotationDegreesClockwise": 0,
-                "Dpi": 0,
-                "Height": 1516,
-                "Id": 1,
-                "Width": 1999
-              }
-            ]
-          },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
-          }
-        }
-      }
-    ],
-    "OriginalFiles": null
-  },
-  "History": [
+  "BluDoc.Version": "1.5.0",
+  "Created.DateTime": "2026-01-27T10:38:17.5555425+00:00",
+  "CreatorSoftware.Name": "DocumentWorkflow",
+  "CreatorSoftware.Version": "1.0.0",
+  "Document.Type": "timesheet",
+  "DocumentEssentials": [
     {
-      "State": "Running",
-      "Timestamp": "2026-01-23T15:10:16.5639096Z"
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Staff.Id",
+      "Location": {
+        "Height": 35,
+        "Left": 451,
+        "Page": 1,
+        "Top": 766,
+        "Width": 54
+      },
+      "Text": "123",
+      "Value": "123"
     },
     {
-      "State": "Finished",
-      "Timestamp": "2026-01-23T15:10:21.7802712Z"
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Staff.Name",
+      "Location": {
+        "Height": 34,
+        "Left": 457,
+        "Page": 1,
+        "Top": 818,
+        "Width": 183
+      },
+      "Text": "Max Muster",
+      "Value": "Max Muster"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "ConstructionSite.String",
+      "Location": {
+        "Height": 36,
+        "Left": 355,
+        "Page": 1,
+        "Top": 901,
+        "Width": 125
+      },
+      "Text": "BluDelta",
+      "Value": "BluDelta"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Customer.Name",
+      "Location": null,
+      "Text": "Blumatix",
+      "Value": "Blumatix"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Signature.Bool",
+      "Location": null,
+      "Text": "False",
+      "Value": "false"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Total.Duration",
+      "Location": null,
+      "Text": "38.5",
+      "Value": "38.5"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Info.String",
+      "Location": null,
+      "Text": "",
+      "Value": ""
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Date",
+          "Location": {
+            "Height": 28,
+            "Left": 303,
+            "Page": 1,
+            "Top": 365,
+            "Width": 159
+          },
+          "Text": "14.04.2025",
+          "Value": "2025-04-14"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Start.Time",
+          "Location": null,
+          "Text": "8",
+          "Value": "08:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "End.Time",
+          "Location": null,
+          "Text": "17",
+          "Value": "17:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Total.Duration",
+          "Location": null,
+          "Text": "8.5",
+          "Value": "8.5"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Info.String",
+          "Location": null,
+          "Text": "123/4567",
+          "Value": "123/4567"
+        }
+      ],
+      "Label": "WorkDay.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Date",
+          "Location": {
+            "Height": 26,
+            "Left": 303,
+            "Page": 1,
+            "Top": 408,
+            "Width": 156
+          },
+          "Text": "15.04.2025",
+          "Value": "2025-04-15"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Start.Time",
+          "Location": null,
+          "Text": "8",
+          "Value": "08:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "End.Time",
+          "Location": null,
+          "Text": "17",
+          "Value": "17:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Total.Duration",
+          "Location": null,
+          "Text": "8.5",
+          "Value": "8.5"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Info.String",
+          "Location": null,
+          "Text": "123/4567",
+          "Value": "123/4567"
+        }
+      ],
+      "Label": "WorkDay.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Date",
+          "Location": {
+            "Height": 29,
+            "Left": 302,
+            "Page": 1,
+            "Top": 450,
+            "Width": 157
+          },
+          "Text": "16.04.2025",
+          "Value": "2025-04-16"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Start.Time",
+          "Location": null,
+          "Text": "8",
+          "Value": "08:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "End.Time",
+          "Location": null,
+          "Text": "17",
+          "Value": "17:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Total.Duration",
+          "Location": null,
+          "Text": "8.5",
+          "Value": "8.5"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Info.String",
+          "Location": null,
+          "Text": "123/4567",
+          "Value": "123/4567"
+        }
+      ],
+      "Label": "WorkDay.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Date",
+          "Location": {
+            "Height": 30,
+            "Left": 302,
+            "Page": 1,
+            "Top": 492,
+            "Width": 157
+          },
+          "Text": "17.04.2025",
+          "Value": "2025-04-17"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Start.Time",
+          "Location": null,
+          "Text": "8",
+          "Value": "08:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "End.Time",
+          "Location": null,
+          "Text": "17",
+          "Value": "17:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Total.Duration",
+          "Location": null,
+          "Text": "8.5",
+          "Value": "8.5"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Info.String",
+          "Location": null,
+          "Text": "123/4567",
+          "Value": "123/4567"
+        }
+      ],
+      "Label": "WorkDay.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Date",
+          "Location": {
+            "Height": 28,
+            "Left": 302,
+            "Page": 1,
+            "Top": 536,
+            "Width": 158
+          },
+          "Text": "18.04.2025",
+          "Value": "2025-04-18"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Start.Time",
+          "Location": null,
+          "Text": "8",
+          "Value": "08:00"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "End.Time",
+          "Location": null,
+          "Text": "12:30",
+          "Value": "12:30"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Total.Duration",
+          "Location": null,
+          "Text": "4.5",
+          "Value": "4.5"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Info.String",
+          "Location": null,
+          "Text": "123/4567",
+          "Value": "123/4567"
+        }
+      ],
+      "Label": "WorkDay.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    }
+  ],
+  "DocumentProvider.Name": "blumatix",
+  "Pages": [
+    {
+      "AppliedRotationDegreesClockwise": 0,
+      "Dpi": 0,
+      "Height": 1516,
+      "Id": 1,
+      "Width": 1999
     }
   ]
 }

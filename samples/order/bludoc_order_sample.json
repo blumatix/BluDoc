@@ -1,663 +1,628 @@
 {
-  "JobId": "10e3dc6d-90cb-462b-8db8-9c5909e50d1b",
-  "CustomerId": "default-customer",
-  "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T16:34:43.7244926Z",
-  "ErrorMessage": null,
-  "ErrorCode": 0,
-  "Result": {
-    "AdditionalContextData": {},
-    "Documents": [
-      {
-        "DocumentId": "bludoc_order_sample.pdf",
-        "Grouping": null,
-        "Classification": null,
-        "Extraction": {
-          "Result": {
-            "BluDoc.Version": "1.5.0",
-            "Created.DateTime": "2026-01-23T16:34:43.4776275+00:00",
-            "CreatorSoftware.Name": "DocumentWorkflow",
-            "CreatorSoftware.Version": "1.0.0",
-            "Document.Type": "order",
-            "DocumentEssentials": [
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Order.Id",
-                "Location": {
-                  "Height": 50,
-                  "Left": 1317,
-                  "Page": 1,
-                  "Top": 995,
-                  "Width": 141
-                },
-                "Text": "123456",
-                "Value": "123456"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Order.Date",
-                "Location": {
-                  "Height": 41,
-                  "Left": 1129,
-                  "Page": 1,
-                  "Top": 1056,
-                  "Width": 214
-                },
-                "Text": "02.05.2025",
-                "Value": "2025-05-02"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Sender.Id",
-                "Location": {
-                  "Height": 44,
-                  "Left": 617,
-                  "Page": 1,
-                  "Top": 999,
-                  "Width": 250
-                },
-                "Text": "1000030 000",
-                "Value": "1000030 000"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Receiver.Id",
-                "Location": {
-                  "Height": 41,
-                  "Left": 606,
-                  "Page": 1,
-                  "Top": 1050,
-                  "Width": 94
-                },
-                "Text": "1234",
-                "Value": "1234"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": null,
-                "Label": "Sender.VatId",
-                "Location": {
-                  "Height": 51,
-                  "Left": 431,
-                  "Page": 1,
-                  "Top": 753,
-                  "Width": 295
-                },
-                "Text": "ATU12345678",
-                "Value": "ATU12345678"
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Name",
-                    "Location": {
-                      "Height": 54,
-                      "Left": 1650,
-                      "Page": 1,
-                      "Top": 290,
-                      "Width": 675
-                    },
-                    "Text": "Blumatix Intelligence GmbH",
-                    "Value": "Blumatix Intelligence GmbH"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Attention.Name",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Street",
-                    "Location": {
-                      "Height": 50,
-                      "Left": 1950,
-                      "Page": 1,
-                      "Top": 352,
-                      "Width": 377
-                    },
-                    "Text": "Schwarzstraße 48",
-                    "Value": "Schwarzstraße 48"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.ZipCode",
-                    "Location": null,
-                    "Text": "5020",
-                    "Value": "5020"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.City",
-                    "Location": null,
-                    "Text": "Salzburg",
-                    "Value": "Salzburg"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Region",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Country",
-                    "Location": null,
-                    "Text": "Austria",
-                    "Value": "AT"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Website",
-                    "Location": {
-                      "Height": 37,
-                      "Left": 819,
-                      "Page": 1,
-                      "Top": 3150,
-                      "Width": 296
-                    },
-                    "Text": "www.blumatix.com",
-                    "Value": "https://blumatix.com"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Email",
-                    "Location": null,
-                    "Text": "office@blumatix.com",
-                    "Value": "office@blumatix.com"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Phone",
-                    "Location": {
-                      "Height": 48,
-                      "Left": 1975,
-                      "Page": 1,
-                      "Top": 475,
-                      "Width": 350
-                    },
-                    "Text": "+43 662 243410",
-                    "Value": "+43662243410"
-                  }
-                ],
-                "Label": "Sender.Contact.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "ReceiverArticle.Id",
-                    "Location": {
-                      "Height": 39,
-                      "Left": 556,
-                      "Page": 1,
-                      "Top": 1665,
-                      "Width": 243
-                    },
-                    "Text": "100.010.0001",
-                    "Value": "100.010.0001"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Article.Id",
-                    "Location": {
-                      "Height": 42,
-                      "Left": 901,
-                      "Page": 1,
-                      "Top": 1748,
-                      "Width": 110
-                    },
-                    "Text": "84526",
-                    "Value": "84526"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Quantity.Decimal",
-                    "Location": null,
-                    "Text": "10",
-                    "Value": "10"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Unit.Type",
-                    "Location": null,
-                    "Text": "Stück",
-                    "Value": "Stück"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Unit.SmallAmount",
-                    "Location": null,
-                    "Text": "20",
-                    "Value": "20.0000"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "DeliveryDate.Item",
-                    "Location": null,
-                    "Text": null,
-                    "Value": null
-                  }
-                ],
-                "Label": "Line.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "ReceiverArticle.Id",
-                    "Location": {
-                      "Height": 51,
-                      "Left": 549,
-                      "Page": 1,
-                      "Top": 1824,
-                      "Width": 236
-                    },
-                    "Text": "202.305.202",
-                    "Value": "202.305.202"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Article.Id",
-                    "Location": {
-                      "Height": 53,
-                      "Left": 901,
-                      "Page": 1,
-                      "Top": 1909,
-                      "Width": 113
-                    },
-                    "Text": "75468",
-                    "Value": "75468"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Quantity.Decimal",
-                    "Location": null,
-                    "Text": "10",
-                    "Value": "10"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Unit.Type",
-                    "Location": null,
-                    "Text": "Stück",
-                    "Value": "Stück"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Unit.SmallAmount",
-                    "Location": null,
-                    "Text": "30",
-                    "Value": "30.0000"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "DeliveryDate.Item",
-                    "Location": null,
-                    "Text": null,
-                    "Value": null
-                  }
-                ],
-                "Label": "Line.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Delivery.Date",
-                    "Location": {
-                      "Height": 43,
-                      "Left": 535,
-                      "Page": 1,
-                      "Top": 1104,
-                      "Width": 216
-                    },
-                    "Text": "05.05.2025",
-                    "Value": "2025-05-05"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Delivery.Week",
-                    "Location": null,
-                    "Text": "KW19/2025",
-                    "Value": ""
-                  }
-                ],
-                "Label": "DeliveryDate.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Name",
-                    "Location": {
-                      "Height": 54,
-                      "Left": 1650,
-                      "Page": 1,
-                      "Top": 290,
-                      "Width": 675
-                    },
-                    "Text": "Blumatix Intelligence GmbH",
-                    "Value": "Blumatix Intelligence GmbH"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Attention.Name",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Street",
-                    "Location": {
-                      "Height": 44,
-                      "Left": 260,
-                      "Page": 1,
-                      "Top": 2463,
-                      "Width": 289
-                    },
-                    "Text": "Schwarzstr. 40",
-                    "Value": "Schwarzstr. 40"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.ZipCode",
-                    "Location": null,
-                    "Text": "5020",
-                    "Value": "5020"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.City",
-                    "Location": null,
-                    "Text": "Salzburg",
-                    "Value": "Salzburg"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Region",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Country",
-                    "Location": null,
-                    "Text": "Austria",
-                    "Value": "AT"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Website",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Email",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Phone",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  }
-                ],
-                "Label": "Delivery.Contact.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              },
-              {
-                "Confidence": 0.85,
-                "ConfidenceThreshold": -1.0,
-                "Items": [
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Name",
-                    "Location": {
-                      "Height": 54,
-                      "Left": 1650,
-                      "Page": 1,
-                      "Top": 290,
-                      "Width": 675
-                    },
-                    "Text": "Blumatix Intelligence GmbH",
-                    "Value": "Blumatix Intelligence GmbH"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Attention.Name",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Street",
-                    "Location": {
-                      "Height": 45,
-                      "Left": 999,
-                      "Page": 1,
-                      "Top": 2463,
-                      "Width": 290
-                    },
-                    "Text": "Schwarzstr. 48",
-                    "Value": "Schwarzstr. 48"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.ZipCode",
-                    "Location": null,
-                    "Text": "5020",
-                    "Value": "5020"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.City",
-                    "Location": null,
-                    "Text": "Salzburg",
-                    "Value": "Salzburg"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Region",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Country",
-                    "Location": null,
-                    "Text": "Austria",
-                    "Value": "AT"
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Website",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Email",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  },
-                  {
-                    "Confidence": 0.85,
-                    "ConfidenceThreshold": -1.0,
-                    "Items": null,
-                    "Label": "Contact.Phone",
-                    "Location": null,
-                    "Text": "",
-                    "Value": ""
-                  }
-                ],
-                "Label": "Invoice.Contact.Item",
-                "Location": null,
-                "Text": null,
-                "Value": null
-              }
-            ],
-            "DocumentProvider.Name": "blumatix",
-            "Pages": [
-              {
-                "AppliedRotationDegreesClockwise": 0,
-                "Dpi": 300,
-                "Height": 3300,
-                "Id": 1,
-                "Width": 2550
-              }
-            ]
-          },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
-          }
-        }
-      }
-    ],
-    "OriginalFiles": null
-  },
-  "History": [
+  "BluDoc.Version": "1.5.0",
+  "Created.DateTime": "2026-01-27T10:37:22.0093338+00:00",
+  "CreatorSoftware.Name": "DocumentWorkflow",
+  "CreatorSoftware.Version": "1.0.0",
+  "Document.Type": "order",
+  "DocumentEssentials": [
     {
-      "State": "Running",
-      "Timestamp": "2026-01-23T16:34:34.7214107Z"
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Order.Id",
+      "Location": {
+        "Height": 50,
+        "Left": 1317,
+        "Page": 1,
+        "Top": 995,
+        "Width": 141
+      },
+      "Text": "123456",
+      "Value": "123456"
     },
     {
-      "State": "Finished",
-      "Timestamp": "2026-01-23T16:34:43.7244926Z"
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Order.Date",
+      "Location": {
+        "Height": 41,
+        "Left": 1129,
+        "Page": 1,
+        "Top": 1056,
+        "Width": 214
+      },
+      "Text": "02.05.2025",
+      "Value": "2025-05-02"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Sender.Id",
+      "Location": {
+        "Height": 44,
+        "Left": 617,
+        "Page": 1,
+        "Top": 999,
+        "Width": 250
+      },
+      "Text": "1000030 000",
+      "Value": "1000030 000"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Receiver.Id",
+      "Location": {
+        "Height": 41,
+        "Left": 606,
+        "Page": 1,
+        "Top": 1050,
+        "Width": 94
+      },
+      "Text": "1234",
+      "Value": "1234"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": null,
+      "Label": "Sender.VatId",
+      "Location": {
+        "Height": 51,
+        "Left": 431,
+        "Page": 1,
+        "Top": 753,
+        "Width": 295
+      },
+      "Text": "ATU12345678",
+      "Value": "ATU12345678"
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Name",
+          "Location": {
+            "Height": 54,
+            "Left": 1650,
+            "Page": 1,
+            "Top": 290,
+            "Width": 675
+          },
+          "Text": "Blumatix Intelligence GmbH",
+          "Value": "Blumatix Intelligence GmbH"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Attention.Name",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Street",
+          "Location": {
+            "Height": 50,
+            "Left": 1950,
+            "Page": 1,
+            "Top": 352,
+            "Width": 377
+          },
+          "Text": "Schwarzstraße 48",
+          "Value": "Schwarzstraße 48"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.ZipCode",
+          "Location": null,
+          "Text": "5020",
+          "Value": "5020"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.City",
+          "Location": null,
+          "Text": "Salzburg",
+          "Value": "Salzburg"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Region",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Country",
+          "Location": null,
+          "Text": "Austria",
+          "Value": "AT"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Website",
+          "Location": {
+            "Height": 37,
+            "Left": 819,
+            "Page": 1,
+            "Top": 3150,
+            "Width": 296
+          },
+          "Text": "www.blumatix.com",
+          "Value": "https://blumatix.com"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Email",
+          "Location": null,
+          "Text": "office@blumatix.com",
+          "Value": "office@blumatix.com"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Phone",
+          "Location": {
+            "Height": 48,
+            "Left": 1975,
+            "Page": 1,
+            "Top": 475,
+            "Width": 350
+          },
+          "Text": "+43 662 243410",
+          "Value": "+43662243410"
+        }
+      ],
+      "Label": "Sender.Contact.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "ReceiverArticle.Id",
+          "Location": {
+            "Height": 39,
+            "Left": 556,
+            "Page": 1,
+            "Top": 1665,
+            "Width": 243
+          },
+          "Text": "100.010.0001",
+          "Value": "100.010.0001"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Article.Id",
+          "Location": {
+            "Height": 42,
+            "Left": 901,
+            "Page": 1,
+            "Top": 1748,
+            "Width": 110
+          },
+          "Text": "84526",
+          "Value": "84526"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Quantity.Decimal",
+          "Location": null,
+          "Text": "10",
+          "Value": "10"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Unit.Type",
+          "Location": null,
+          "Text": "Stück",
+          "Value": "Stück"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Unit.SmallAmount",
+          "Location": null,
+          "Text": "20",
+          "Value": "20.0000"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "DeliveryDate.Item",
+          "Location": null,
+          "Text": null,
+          "Value": null
+        }
+      ],
+      "Label": "Line.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "ReceiverArticle.Id",
+          "Location": {
+            "Height": 51,
+            "Left": 549,
+            "Page": 1,
+            "Top": 1824,
+            "Width": 236
+          },
+          "Text": "202.305.202",
+          "Value": "202.305.202"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Article.Id",
+          "Location": {
+            "Height": 53,
+            "Left": 901,
+            "Page": 1,
+            "Top": 1909,
+            "Width": 113
+          },
+          "Text": "75468",
+          "Value": "75468"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Quantity.Decimal",
+          "Location": null,
+          "Text": "10",
+          "Value": "10"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Unit.Type",
+          "Location": null,
+          "Text": "Stück",
+          "Value": "Stück"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Unit.SmallAmount",
+          "Location": null,
+          "Text": "30",
+          "Value": "30.0000"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "DeliveryDate.Item",
+          "Location": null,
+          "Text": null,
+          "Value": null
+        }
+      ],
+      "Label": "Line.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Delivery.Date",
+          "Location": {
+            "Height": 43,
+            "Left": 535,
+            "Page": 1,
+            "Top": 1104,
+            "Width": 216
+          },
+          "Text": "05.05.2025",
+          "Value": "2025-05-05"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Delivery.Week",
+          "Location": null,
+          "Text": "KW19/2025",
+          "Value": ""
+        }
+      ],
+      "Label": "DeliveryDate.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Name",
+          "Location": {
+            "Height": 54,
+            "Left": 1650,
+            "Page": 1,
+            "Top": 290,
+            "Width": 675
+          },
+          "Text": "Blumatix Intelligence GmbH",
+          "Value": "Blumatix Intelligence GmbH"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Attention.Name",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Street",
+          "Location": {
+            "Height": 44,
+            "Left": 260,
+            "Page": 1,
+            "Top": 2463,
+            "Width": 289
+          },
+          "Text": "Schwarzstr. 40",
+          "Value": "Schwarzstr. 40"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.ZipCode",
+          "Location": null,
+          "Text": "5020",
+          "Value": "5020"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.City",
+          "Location": null,
+          "Text": "Salzburg",
+          "Value": "Salzburg"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Region",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Country",
+          "Location": null,
+          "Text": "Austria",
+          "Value": "AT"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Website",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Email",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Phone",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        }
+      ],
+      "Label": "Delivery.Contact.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    },
+    {
+      "Confidence": 0.85,
+      "ConfidenceThreshold": -1.0,
+      "Items": [
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Name",
+          "Location": {
+            "Height": 54,
+            "Left": 1650,
+            "Page": 1,
+            "Top": 290,
+            "Width": 675
+          },
+          "Text": "Blumatix Intelligence GmbH",
+          "Value": "Blumatix Intelligence GmbH"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Attention.Name",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Street",
+          "Location": {
+            "Height": 45,
+            "Left": 999,
+            "Page": 1,
+            "Top": 2463,
+            "Width": 290
+          },
+          "Text": "Schwarzstr. 48",
+          "Value": "Schwarzstr. 48"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.ZipCode",
+          "Location": null,
+          "Text": "5020",
+          "Value": "5020"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.City",
+          "Location": null,
+          "Text": "Salzburg",
+          "Value": "Salzburg"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Region",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Country",
+          "Location": null,
+          "Text": "Austria",
+          "Value": "AT"
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Website",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Email",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        },
+        {
+          "Confidence": 0.85,
+          "ConfidenceThreshold": -1.0,
+          "Items": null,
+          "Label": "Contact.Phone",
+          "Location": null,
+          "Text": "",
+          "Value": ""
+        }
+      ],
+      "Label": "Invoice.Contact.Item",
+      "Location": null,
+      "Text": null,
+      "Value": null
+    }
+  ],
+  "DocumentProvider.Name": "blumatix",
+  "Pages": [
+    {
+      "AppliedRotationDegreesClockwise": 0,
+      "Dpi": 300,
+      "Height": 3300,
+      "Id": 1,
+      "Width": 2550
     }
   ]
 }

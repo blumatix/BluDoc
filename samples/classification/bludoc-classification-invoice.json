@@ -1,52 +1,30 @@
-{
-  "JobId": "f2ff1abb-8309-453a-a83c-251f3936b97a",
-  "CustomerId": "default-customer",
-  "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T16:33:42.60415Z",
-  "ErrorMessage": null,
-  "ErrorCode": 0,
-  "Result": {
-    "AdditionalContextData": {},
-    "Documents": [
-      {
-        "DocumentId": "doc-001",
-        "Grouping": {
-          "Result": {
-            "Pages": [
-              {
-                "Page": 1,
-                "OriginalFile": "bludoc-classification-invoice.pdf",
-                "OriginalPage": 1
-              }
-            ]
-          },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
+[
+  {
+    "DocumentId": "doc-001",
+    "Grouping": {
+      "Result": {
+        "Pages": [
+          {
+            "Page": 1,
+            "OriginalFile": "bludoc-classification-invoice.pdf",
+            "OriginalPage": 1
           }
-        },
-        "Classification": {
-          "Result": {
-            "DocumentType": "Invoice"
-          },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
-          }
-        },
-        "Extraction": null
+        ]
+      },
+      "ResultState": {
+        "Code": "200",
+        "Message": "OK"
       }
-    ],
-    "OriginalFiles": null
-  },
-  "History": [
-    {
-      "State": "Running",
-      "Timestamp": "2026-01-23T16:33:37.8170388Z"
     },
-    {
-      "State": "Finished",
-      "Timestamp": "2026-01-23T16:33:42.60415Z"
-    }
-  ]
-}
+    "Classification": {
+      "Result": {
+        "DocumentType": "Invoice"
+      },
+      "ResultState": {
+        "Code": "200",
+        "Message": "OK"
+      }
+    },
+    "Extraction": null
+  }
+]

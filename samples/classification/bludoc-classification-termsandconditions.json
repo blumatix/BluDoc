@@ -1,97 +1,75 @@
-{
-  "JobId": "2ae50fa9-771c-455a-8e0a-ce62248a4b08",
-  "CustomerId": "default-customer",
-  "CurrentState": "Finished",
-  "LastUpdated": "2026-01-23T16:34:07.2475764Z",
-  "ErrorMessage": null,
-  "ErrorCode": 0,
-  "Result": {
-    "AdditionalContextData": {},
-    "Documents": [
-      {
-        "DocumentId": "doc-001",
-        "Grouping": {
-          "Result": {
-            "Pages": [
-              {
-                "Page": 1,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 1
-              },
-              {
-                "Page": 2,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 2
-              },
-              {
-                "Page": 3,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 3
-              },
-              {
-                "Page": 4,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 4
-              },
-              {
-                "Page": 5,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 5
-              },
-              {
-                "Page": 6,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 6
-              },
-              {
-                "Page": 7,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 7
-              },
-              {
-                "Page": 8,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 8
-              },
-              {
-                "Page": 9,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 9
-              },
-              {
-                "Page": 10,
-                "OriginalFile": "bludoc-classification-termsandconditions.pdf",
-                "OriginalPage": 10
-              }
-            ]
+[
+  {
+    "DocumentId": "doc-001",
+    "Grouping": {
+      "Result": {
+        "Pages": [
+          {
+            "Page": 1,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 1
           },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
-          }
-        },
-        "Classification": {
-          "Result": {
-            "DocumentType": "TermsAndConditions"
+          {
+            "Page": 2,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 2
           },
-          "ResultState": {
-            "Code": "200",
-            "Message": "OK"
+          {
+            "Page": 3,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 3
+          },
+          {
+            "Page": 4,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 4
+          },
+          {
+            "Page": 5,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 5
+          },
+          {
+            "Page": 6,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 6
+          },
+          {
+            "Page": 7,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 7
+          },
+          {
+            "Page": 8,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 8
+          },
+          {
+            "Page": 9,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 9
+          },
+          {
+            "Page": 10,
+            "OriginalFile": "bludoc-classification-termsandconditions.pdf",
+            "OriginalPage": 10
           }
-        },
-        "Extraction": null
+        ]
+      },
+      "ResultState": {
+        "Code": "200",
+        "Message": "OK"
       }
-    ],
-    "OriginalFiles": null
-  },
-  "History": [
-    {
-      "State": "Running",
-      "Timestamp": "2026-01-23T16:33:50.2299582Z"
     },
-    {
-      "State": "Finished",
-      "Timestamp": "2026-01-23T16:34:07.2475764Z"
-    }
-  ]
-}
+    "Classification": {
+      "Result": {
+        "DocumentType": "TermsAndConditions"
+      },
+      "ResultState": {
+        "Code": "200",
+        "Message": "OK"
+      }
+    },
+    "Extraction": null
+  }
+]
