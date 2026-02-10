@@ -1,0 +1,190 @@
+# All Document Details
+
+Complete list of all document details that can appear in a BluDoc. Items are structural containers (indented bullets show their child fields).
+
+
+- Invoice.Id
+- Contract.Id
+- Invoice.Date
+- Invoice.Type
+- SenderOrder.Id
+- ReceiverOrder.Id
+- ReceiverOrder.Date
+- DeliveryNote.Date
+- BankStatement.Date
+- Balance.Amount
+- Tour.Id
+- Sender.VatId
+- Receiver.VatId
+- Sender.TaxId
+- Receiver.TaxId
+- Sender.Id
+- Receiver.Id
+- Sender.Country
+- Receiver.Country
+- IntraCompany.Flag
+- GrandTotal.Amount
+- GrandTotalConverted.Amount
+- PaymentReference.Id
+- Payment.Amount
+- PaymentStatus.Type
+- PaymentMethod.Type
+- ReferencedInvoice.Id
+- CostCenter.Id
+- Customer.Id
+- Customer.Name
+- CompanyRegistration.Id
+- VatExemption.Type
+- Vat.Item
+  - Vat.Rate
+  - Net.Amount
+  - Vat.Amount
+- VatConverted.Item
+  - Vat.Rate
+  - Net.Amount
+  - Vat.Amount
+  - Currency
+- ExchangeRate.Item
+  - Base.Currency
+  - Target.Currency
+  - ExchangeRate.Decimal
+- Payment.Discount.Item
+  - Due.Item
+    - Due.Date
+    - Due.Duration
+  - Discount.Item
+    - Discount.Rate
+    - Discount.Amount
+- Shipping.Date
+- Order.Date
+- Line.Item
+  - Position.Id
+  - Article.Id
+  - ReceiverArticle.Id
+  - ArticleDescription.String
+  - Quantity.Decimal
+  - Unit.SmallAmount
+  - Total.Amount
+  - Order.Id
+  - DeliveryNote.Id
+  - Unit.Type
+  - Vat.Rate
+  - Article.Type
+  - DeliveryDate.Item
+    - Delivery.Date
+    - Delivery.Week
+    - DeliveryPeriodStart.Date
+    - DeliveryPeriodEnd.Date
+  - Discount.Item
+    - Discount.Rate
+    - Discount.Amount
+  - Charge.String
+  - Origin.Country
+  - CustomsTariff.Id
+  - HsnCode.Id
+- BankAccount.Item
+  - Bank.Iban
+  - Bank.Bic
+  - Bank.Id
+  - Account.Id
+- Contact.Item
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Sender.Contact.Item
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Receiver.Contact.Item
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Delivery.Contact.Item
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- AccountingEntry.Item
+  - AccountingText.String
+- Staff.Id
+- Staff.Name
+- ConstructionSite.String
+- Signature.Bool
+- WorkDay.Item
+  - Date
+  - Start.Time
+  - End.Time
+  - Total.Duration
+  - Info.String
+- OrderConfirmation.Id
+- OrderConfirmation.Date
+- QRCode.Item
+  - Code.Type
+  - Raw.String
+- Barcode.Item
+  - Code.Type
+  - Raw.String
+- Surcharge.Item
+  - Surcharge.Type
+  - Surcharge.Rate
+  - Surcharge.Amount
+- Invoice.Contact.Item
+  - Contact.Name
+  - Attention.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Region
+  - Contact.Country
+  - Contact.Website
+  - Contact.Email
+  - Contact.Phone
+  - Contact.Fax
+- Mandate.Id
+- Mandate.Date
+- Creditor.Id
+- Payer.Contact.Item
+  - Contact.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Phone
+  - Contact.Email
+- AccountHolder.Contact.Item
+  - Contact.Name
+  - Contact.Street
+  - Contact.ZipCode
+  - Contact.City
+  - Contact.Phone
+  - Contact.Email

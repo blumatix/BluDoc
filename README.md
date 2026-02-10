@@ -12,6 +12,7 @@ Use the schema files and samples in this repo to validate and explore BluDoc.
 - [timesheet](samples/timesheet)
 
 ## Document Essentials
+- [All document details](docs/document-essentials/all-document-details.md)
 - [BankStatement](docs/document-essentials/bankstatement-documentessentials.md)
 - [DeliveryNote](docs/document-essentials/deliverynote-documentessentials.md)
 - [DirectDebitMandate](docs/document-essentials/directdebitmandate-documentessentials.md)
