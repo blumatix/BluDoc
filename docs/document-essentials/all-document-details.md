@@ -151,7 +151,6 @@ Complete list of all document details that can appear in a BluDoc. Items are str
 - OrderConfirmation.Date
 - QRCode.Item
   - Code.Type
-  - Raw.String
 - Barcode.Item
   - Code.Type
   - Raw.String
@@ -188,3 +187,75 @@ Complete list of all document details that can appear in a BluDoc. Items are str
   - Contact.City
   - Contact.Phone
   - Contact.Email
+
+---
+
+## Detail Variants
+
+Some details can contain different fields depending on their type (e.g. QR code format). Each variant below lists its expected fields.
+
+- QRCode.Item
+  - Code.Type (=`SwissQR`)
+  - Raw.String
+  - CodeVersion.String
+  - GrandTotal.Amount
+  - Currency
+  - Bank.Iban
+  - ReferenceType.Type
+  - UnstructuredMessage.String
+  - Sender.Contact.Item
+  - Receiver.Contact.Item
+
+- QRCode.Item
+  - Code.Type (=`ChineseQR`)
+  - InvoiceCode.Id
+  - Invoice.Id
+  - Invoice.Date
+  - NetTotal.Amount
+  - GrandTotal.Amount
+
+- QRCode.Item
+  - Code.Type (=`IndianQR`)
+  - Sender.VatId
+  - Receiver.VatId
+  - Invoice.Id
+  - Invoice.Type
+  - Invoice.Date
+  - GrandTotal.Amount
+  - LineItemCount.Int
+  - HsnCode.Id
+  - InvoiceReferenceNumber.Id
+  - InvoiceReferenceNumber.Timestamp
+
+- QRCode.Item
+  - Code.Type (=`PeruQR`)
+  - Sender.TaxId
+  - ReceiptDocument.Type
+  - Invoice.Id
+  - Vat.Amount
+  - GrandTotal.Amount
+  - Invoice.Date
+  - DocumentTypeOfReceiver.Type
+  - Receiver.TaxId
+  - SummaryValue.Id
+
+- QRCode.Item
+  - Code.Type (=`CodigoQR`)
+  - Raw.String
+  - A.String
+  - B.String
+  - C.String
+  - D.String
+  - E.String
+  - F.String
+  - G.String
+  - H.String
+  - I1.String
+  - N.String
+  - O.String
+  - Q.String
+  - R.String
+
+- QRCode.Item
+  - Code.Type (=`GenericQR`)
+  - Raw.String
