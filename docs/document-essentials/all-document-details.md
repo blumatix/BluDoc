@@ -202,6 +202,7 @@ Some details can contain different fields depending on their type (e.g. QR code 
   - Currency
   - Bank.Iban
   - ReferenceType.Type
+  - Reference.String
   - UnstructuredMessage.String
   - Sender.Contact.Item
   - Receiver.Contact.Item
