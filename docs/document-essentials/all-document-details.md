@@ -205,7 +205,21 @@ Some details can contain different fields depending on their type (e.g. QR code 
   - Reference.String
   - UnstructuredMessage.String
   - Sender.Contact.Item
+    - Contact.Name
+    - Contact.AddressLine1.String
+    - Contact.AddressLine2.String
+    - Contact.Street
+    - Contact.City
+    - Contact.ZipCode
+    - Contact.Country
   - Receiver.Contact.Item
+    - Contact.Name
+    - Contact.AddressLine1.String
+    - Contact.AddressLine2.String
+    - Contact.Street
+    - Contact.City
+    - Contact.ZipCode
+    - Contact.Country
 
 - QRCode.Item
   - Code.Type (=`ChineseQR`)
