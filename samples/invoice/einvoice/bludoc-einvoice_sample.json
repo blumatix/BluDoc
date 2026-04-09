@@ -1,0 +1,595 @@
+  {
+  "JobId": "399d77c7-d687-4bd8-88a3-8dccd2913dcc",
+  "CustomerId": "default-customer",
+  "CurrentState": "Finished",
+  "LastUpdated": "2026-04-09T07:38:27.8885405Z",
+  "ErrorMessage": null,
+  "ErrorCode": 0,
+  "Result": {
+    "AdditionalContextData": {
+      "Key1": "Value1",
+      "Bludelta.Warning": "Please use 'Features.Extraction.Options.ExtractIfDocumentClassifiedAs' instead of the deprecated 'DocumentTypes'."
+    },
+    "Documents": [
+      {
+        "DocumentId": "doc-001",
+        "Grouping": {
+          "Result": {
+            "Pages": [
+              {
+                "Page": 1,
+                "OriginalFile": "bludoc-einvoice_sample.xml",
+                "OriginalPage": 1
+              }
+            ]
+          },
+          "ResultState": {
+            "Code": "200",
+            "Message": "OK"
+          }
+        },
+        "Classification": {
+          "Result": {
+            "DocumentType": "Invoice"
+          },
+          "ResultState": {
+            "Code": "200",
+            "Message": "OK"
+          }
+        },
+        "Extraction": {
+          "Result": {
+            "BluDoc.Version": "1.5.0",
+            "Created.DateTime": "2026-04-09T07:38:27.5265372+00:00",
+            "CreatorSoftware.Name": "DocumentWorkflow",
+            "CreatorSoftware.Version": "1.0.0",
+            "Document.Type": "Invoice",
+            "DocumentBinaries": [
+              {
+                "ContentType": "PDFGenerated",
+                "FileName": "PDFGenerated.pdf",
+                "MediaType": "application/pdf",
+                "Name": "PDF Visualization",
+                "Reference": [
+                  "https://document.bludelta.ai/v2/result/399d77c7-d687-4bd8-88a3-8dccd2913dcc/EInvoice-PDF-Visualization-doc-001.pdf"
+                ]
+              },
+              {
+                "ContentType": "PDFValidationProtocol",
+                "FileName": "validation.pdf",
+                "MediaType": "application/pdf",
+                "Name": "Validation Protocol",
+                "Reference": [
+                  "https://document.bludelta.ai/v2/result/399d77c7-d687-4bd8-88a3-8dccd2913dcc/EInvoice-Validation-Protocol-doc-001.pdf"
+                ]
+              }
+            ],
+            "DocumentEssentials": [
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Document.Type",
+                "Location": null,
+                "Text": "Invoice",
+                "Value": "Invoice"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Currency",
+                "Location": null,
+                "Text": "EUR",
+                "Value": "EUR"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Invoice.Id",
+                "Location": null,
+                "Text": "9110168405",
+                "Value": "9110168405"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Invoice.Date",
+                "Location": null,
+                "Text": "2025-02-12",
+                "Value": "2025-02-12"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "GrandTotal.Amount",
+                "Location": null,
+                "Text": "109.77",
+                "Value": "109.77"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "ReceiverOrder.Id",
+                "Location": null,
+                "Text": "411500224102",
+                "Value": "411500224102"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "ReceiverOrder.Date",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "PaymentReference.Id",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "DeliveryNote.Id",
+                "Location": null,
+                "Text": "54321-08112025",
+                "Value": "54321-08112025"
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "VatExemption.Type",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "19",
+                    "Value": "19.0"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Net.Amount",
+                    "Location": null,
+                    "Text": "92.24",
+                    "Value": "92.24"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Vat.Amount",
+                    "Location": null,
+                    "Text": "17.53",
+                    "Value": "17.53"
+                  }
+                ],
+                "Label": "Vat.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Due.Date",
+                    "Location": null,
+                    "Text": "2025-03-13",
+                    "Value": "2025-03-13"
+                  },
+                  {
+                    "Confidence": 1,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "Due.Duration",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "Due.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Delivery.Date",
+                    "Location": null,
+                    "Text": "2025-02-12",
+                    "Value": "2025-02-12"
+                  },
+                  {
+                    "Confidence": 1,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "DeliveryPeriodStart.Date",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 1,
+                    "ConfidenceThreshold": -1,
+                    "Items": null,
+                    "Label": "DeliveryPeriodEnd.Date",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  }
+                ],
+                "Label": "DeliveryDate.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Bank.Iban",
+                    "Location": null,
+                    "Text": "DE02 1001 0010 0100 1001 01",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Bank.Bic",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Bank.Id",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  }
+                ],
+                "Label": "BankAccount.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Sender.VatId",
+                "Location": null,
+                "Text": "",
+                "Value": ""
+              },
+              {
+                "Confidence": 1,
+                "Items": null,
+                "Label": "Receiver.VatId",
+                "Location": null,
+                "Text": "DE111111111",
+                "Value": "DE111111111"
+              },
+              {
+                "Confidence": 1,
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": null,
+                    "Text": "00000",
+                    "Value": "00000"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Attention.Name",
+                    "Location": null,
+                    "Text": "00000",
+                    "Value": "00000"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Street",
+                    "Location": null,
+                    "Text": "Innovationsweg 45",
+                    "Value": "Innovationsweg 45"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.ZipCode",
+                    "Location": null,
+                    "Text": "20457",
+                    "Value": "20457"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.City",
+                    "Location": null,
+                    "Text": "Hamburg",
+                    "Value": "Hamburg"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Region",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Country",
+                    "Location": null,
+                    "Text": "Germany",
+                    "Value": "DE"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Phone",
+                    "Location": null,
+                    "Text": "0409876543",
+                    "Value": "0409876543"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Email",
+                    "Location": null,
+                    "Text": "alpha-solutions-muster@gmbh123.at",
+                    "Value": "alpha-solutions-muster@gmbh123.at"
+                  }
+                ],
+                "Label": "Receiver.Contact.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 1,
+                "Items": [
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Name",
+                    "Location": null,
+                    "Text": "00000",
+                    "Value": "00000"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Attention.Name",
+                    "Location": null,
+                    "Text": "00000",
+                    "Value": "00000"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Street",
+                    "Location": null,
+                    "Text": "Musterstraße 1",
+                    "Value": "Musterstraße 1"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.ZipCode",
+                    "Location": null,
+                    "Text": "10115",
+                    "Value": "10115"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.City",
+                    "Location": null,
+                    "Text": "Berlin",
+                    "Value": "Berlin"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Region",
+                    "Location": null,
+                    "Text": "",
+                    "Value": ""
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Country",
+                    "Location": null,
+                    "Text": "Germany",
+                    "Value": "DE"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Phone",
+                    "Location": null,
+                    "Text": "0301234567",
+                    "Value": "0301234567"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Contact.Email",
+                    "Location": null,
+                    "Text": "beta-innvocation-muster@inv.at",
+                    "Value": "beta-innvocation-muster@inv.at"
+                  }
+                ],
+                "Label": "Sender.Contact.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 1,
+                "Items": [
+                  {
+                    "Items": null,
+                    "Label": "Position.Id",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Article.Id",
+                    "Location": null,
+                    "Text": "1234567876543",
+                    "Value": "1234567876543"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "ArticleDescription.String",
+                    "Location": null,
+                    "Text": "Bestllung telefonisch durch Frau Muster",
+                    "Value": "Bestllung telefonisch durch Frau Muster"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Quantity.Decimal",
+                    "Location": null,
+                    "Text": "8",
+                    "Value": "8"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Unit.SmallAmount",
+                    "Location": null,
+                    "Text": "11.53",
+                    "Value": "11.5300"
+                  },
+                  {
+                    "Items": null,
+                    "Label": "Order.Id",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Items": null,
+                    "Label": "DeliveryNote.Id",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Total.Amount",
+                    "Location": null,
+                    "Text": "92.24",
+                    "Value": "92.24"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Unit.Type",
+                    "Location": null,
+                    "Text": "H87",
+                    "Value": "H87"
+                  },
+                  {
+                    "Confidence": 1,
+                    "Items": null,
+                    "Label": "Vat.Rate",
+                    "Location": null,
+                    "Text": "19",
+                    "Value": "19.0"
+                  },
+                  {
+                    "Items": null,
+                    "Label": "Article.Type",
+                    "Location": null,
+                    "Text": null,
+                    "Value": null
+                  }
+                ],
+                "Label": "Line.Item",
+                "Location": null,
+                "Text": null,
+                "Value": null
+              },
+              {
+                "Confidence": 0,
+                "ConfidenceThreshold": -1,
+                "Items": [
+                  {
+                    "Items": null,
+                    "Label": "EInvoice.Version.String",
+                    "Location": null,
+                    "Text": "XRechnung 3.0",
+                    "Value": "XRechnung 3.0"
+                  },
+                  {
+                    "Items": null,
+                    "Label": "EInvoice.Type",
+                    "Location": null,
+                    "Text": "UBL",
+                    "Value": "UBL"
+                  },
+                  {
+                    "Items": null,
+                    "Label": "EInvoice.ValidationStatus.String",
+                    "Location": null,
+                    "Text": "Error",
+                    "Value": "Error"
+                  }
+                ],
+                "Label": "EInvoice.Item",
+                "Location": null,
+                "Text": " ",
+                "Value": ""
+              }
+            ],
+            "DocumentProvider.Name": "default-customer"
+          },
+          "ResultState": {
+            "Code": "200",
+            "Message": "OK"
+          }
+        }
+      }
+    ],
+    "OriginalFiles": null
+  },
+  "History": [
+    {
+      "State": "Running",
+      "Timestamp": "2026-04-09T07:38:24.8650338Z"
+    },
+    {
+      "State": "Finished",
+      "Timestamp": "2026-04-09T07:38:27.8885405Z"
+    }
+  ]
+}
