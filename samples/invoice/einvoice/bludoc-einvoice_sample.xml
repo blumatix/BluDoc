@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ubl:Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0</cbc:CustomizationID>
+<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+<cbc:ID>9110168405</cbc:ID>
+<cbc:IssueDate>2025-02-12</cbc:IssueDate>
+<cbc:DueDate>2025-03-13</cbc:DueDate>
+<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+<cbc:AccountingCost>00000</cbc:AccountingCost>
+<cbc:BuyerReference>00000</cbc:BuyerReference>
+<cac:InvoicePeriod>
+<cbc:StartDate>2025-02-12</cbc:StartDate>
+</cac:InvoicePeriod>
+<cac:OrderReference>
+<cbc:ID>411500224102</cbc:ID>
+<cbc:SalesOrderID>40091398</cbc:SalesOrderID>
+</cac:OrderReference>
+<cac:DespatchDocumentReference>
+<cbc:ID>54321-08112025</cbc:ID>
+</cac:DespatchDocumentReference>
+<cac:OriginatorDocumentReference>
+<cbc:ID>00000</cbc:ID>
+</cac:OriginatorDocumentReference>
+<cac:ContractDocumentReference>
+<cbc:ID>11110004236487</cbc:ID>
+</cac:ContractDocumentReference>
+<cac:AdditionalDocumentReference>
+<cbc:ID>1</cbc:ID>
+<cac:Attachment>
+</cac:Attachment>
+</cac:AdditionalDocumentReference>
+<cac:ProjectReference>
+<cbc:ID>00000</cbc:ID>
+</cac:ProjectReference>
+<cac:AccountingSupplierParty>
+<cac:Party>
+<cbc:EndpointID schemeID="EM">00000</cbc:EndpointID>
+<cac:PartyIdentification>
+<cbc:ID>00000</cbc:ID>
+</cac:PartyIdentification>
+<cac:PartyName>
+<cbc:Name>00000</cbc:Name>
+</cac:PartyName>
+<cac:PostalAddress>
+<cbc:StreetName>Musterstraße 1</cbc:StreetName>
+<cbc:AdditionalStreetName>00000</cbc:AdditionalStreetName>
+<cbc:CityName>Berlin</cbc:CityName>
+<cbc:PostalZone>10115</cbc:PostalZone>
+<cac:AddressLine>
+<cbc:Line>00000</cbc:Line>
+</cac:AddressLine>
+<cac:Country>
+<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+</cac:Country>
+</cac:PostalAddress>
+<cac:PartyTaxScheme>
+<cbc:CompanyID/>
+<cac:TaxScheme>
+<cbc:ID>VAT</cbc:ID>
+</cac:TaxScheme>
+</cac:PartyTaxScheme>
+<cac:PartyLegalEntity>
+<cbc:RegistrationName>Alpha Solutions GmbH</cbc:RegistrationName>
+<cbc:CompanyID>00000</cbc:CompanyID>
+<cbc:CompanyLegalForm>00000</cbc:CompanyLegalForm>
+</cac:PartyLegalEntity>
+<cac:Contact>
+<cbc:Name>00000</cbc:Name>
+<cbc:Telephone>0301234567</cbc:Telephone>
+<cbc:ElectronicMail>beta-innvocation-muster@inv.at</cbc:ElectronicMail>
+</cac:Contact>
+</cac:Party>
+</cac:AccountingSupplierParty>
+<cac:AccountingCustomerParty>
+<cac:Party>
+<cbc:EndpointID schemeID="EM">00000</cbc:EndpointID>
+<cac:PartyIdentification>
+<cbc:ID>09268</cbc:ID>
+</cac:PartyIdentification>
+<cac:PartyName>
+<cbc:Name>00000</cbc:Name>
+</cac:PartyName>
+<cac:PostalAddress>
+<cbc:StreetName>Innovationsweg 45</cbc:StreetName>
+<cbc:AdditionalStreetName>00000</cbc:AdditionalStreetName>
+<cbc:CityName>Hamburg</cbc:CityName>
+<cbc:PostalZone>20457</cbc:PostalZone>
+<cac:AddressLine>
+<cbc:Line>00000</cbc:Line>
+</cac:AddressLine>
+<cac:Country>
+<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+</cac:Country>
+</cac:PostalAddress>
+<cac:PartyTaxScheme>
+<cbc:CompanyID>DE111111111</cbc:CompanyID>
+<cac:TaxScheme>
+<cbc:ID>VAT</cbc:ID>
+</cac:TaxScheme>
+</cac:PartyTaxScheme>
+<cac:PartyLegalEntity>
+<cbc:RegistrationName>Beta Innovations AG</cbc:RegistrationName>
+<cbc:CompanyID>00000</cbc:CompanyID>
+</cac:PartyLegalEntity>
+<cac:Contact>
+<cbc:Name>00000</cbc:Name>
+<cbc:Telephone>0409876543</cbc:Telephone>
+<cbc:ElectronicMail>alpha-solutions-muster@gmbh123.at</cbc:ElectronicMail>
+</cac:Contact>
+</cac:Party>
+</cac:AccountingCustomerParty>
+<cac:Delivery>
+<cbc:ActualDeliveryDate>2025-02-12</cbc:ActualDeliveryDate>
+<cac:DeliveryLocation>
+<cbc:ID>Beta Innovations AG</cbc:ID>
+<cac:Address>
+<cbc:StreetName>Innovationsweg 45</cbc:StreetName>
+<cbc:AdditionalStreetName>00000</cbc:AdditionalStreetName>
+<cbc:CityName>Hamburg</cbc:CityName>
+<cbc:PostalZone>20457</cbc:PostalZone>
+<cac:AddressLine>
+<cbc:Line>00000</cbc:Line>
+</cac:AddressLine>
+<cac:Country>
+<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+</cac:Country>
+</cac:Address>
+</cac:DeliveryLocation>
+<cac:DeliveryParty>
+<cac:PartyName>
+<cbc:Name>00000</cbc:Name>
+</cac:PartyName>
+</cac:DeliveryParty>
+</cac:Delivery>
+<cac:PaymentMeans>
+<cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+<cac:PayeeFinancialAccount>
+<cbc:ID>DE02 1001 0010 0100 1001 01</cbc:ID>
+<cbc:Name/>
+<cac:FinancialInstitutionBranch>
+<cbc:ID/>
+</cac:FinancialInstitutionBranch>
+</cac:PayeeFinancialAccount>
+</cac:PaymentMeans>
+<cac:PaymentTerms>
+<cbc:Note>00000</cbc:Note>
+</cac:PaymentTerms>
+<cac:TaxTotal>
+<cbc:TaxAmount currencyID="EUR">17.53</cbc:TaxAmount>
+<cac:TaxSubtotal>
+<cbc:TaxableAmount currencyID="EUR">92.24</cbc:TaxableAmount>
+<cbc:TaxAmount currencyID="EUR">17.53</cbc:TaxAmount>
+<cac:TaxCategory>
+<cbc:ID>S</cbc:ID>
+<cbc:Percent>19</cbc:Percent>
+<cac:TaxScheme>
+<cbc:ID>VAT</cbc:ID>
+</cac:TaxScheme>
+</cac:TaxCategory>
+</cac:TaxSubtotal>
+</cac:TaxTotal>
+<cac:LegalMonetaryTotal>
+<cbc:LineExtensionAmount currencyID="EUR">92.24</cbc:LineExtensionAmount>
+<cbc:TaxExclusiveAmount currencyID="EUR">92.24</cbc:TaxExclusiveAmount>
+<cbc:TaxInclusiveAmount currencyID="EUR">109.77</cbc:TaxInclusiveAmount>
+<cbc:PrepaidAmount currencyID="EUR">00000</cbc:PrepaidAmount>
+<cbc:PayableAmount currencyID="EUR">109.77</cbc:PayableAmount>
+</cac:LegalMonetaryTotal>
+<cac:InvoiceLine>
+<cbc:ID>1</cbc:ID>
+<cbc:InvoicedQuantity unitCode="H87">8</cbc:InvoicedQuantity>
+<cbc:LineExtensionAmount currencyID="EUR">92.24</cbc:LineExtensionAmount>
+<cbc:AccountingCost>92.24</cbc:AccountingCost>
+<cac:OrderLineReference>
+<cbc:LineID>00000</cbc:LineID>
+</cac:OrderLineReference>
+<cac:Item>
+<cbc:Description>Bestllung telefonisch durch Frau Muster</cbc:Description>
+<cbc:Name>00000</cbc:Name>
+<cac:BuyersItemIdentification>
+<cbc:ID>00000</cbc:ID>
+</cac:BuyersItemIdentification>
+<cac:SellersItemIdentification>
+<cbc:ID>1234567876543</cbc:ID>
+</cac:SellersItemIdentification>
+<cac:StandardItemIdentification>
+<cbc:ID schemeID="0197">00000</cbc:ID>
+</cac:StandardItemIdentification>
+<cac:OriginCountry>
+<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+</cac:OriginCountry>
+<cac:ClassifiedTaxCategory>
+<cbc:ID>S</cbc:ID>
+<cbc:Percent>19</cbc:Percent>
+<cac:TaxScheme>
+<cbc:ID>VAT</cbc:ID>
+</cac:TaxScheme>
+</cac:ClassifiedTaxCategory>
+<cac:AdditionalItemProperty>
+<cbc:Name>00000</cbc:Name>
+<cbc:Value>00000</cbc:Value>
+</cac:AdditionalItemProperty>
+</cac:Item>
+<cac:Price>
+<cbc:PriceAmount currencyID="EUR">11.53</cbc:PriceAmount>
+<cbc:BaseQuantity unitCode="H87">1</cbc:BaseQuantity>
+</cac:Price>
+</cac:InvoiceLine>
+</ubl:Invoice>
