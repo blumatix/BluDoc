@@ -370,7 +370,7 @@
           "Confidence": 0.85,
           "ConfidenceThreshold": -1.0,
           "Items": null,
-          "Label": "Article.Description.String",
+          "Label": "ArticleDescription.String",
           "Location": {
             "Height": 96,
             "Left": 315,
@@ -503,7 +503,7 @@
           "Confidence": 0.85,
           "ConfidenceThreshold": -1.0,
           "Items": null,
-          "Label": "Article.Description.String",
+          "Label": "ArticleDescription.String",
           "Location": {
             "Height": 50,
             "Left": 315,
