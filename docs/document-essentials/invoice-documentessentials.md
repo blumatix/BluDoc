@@ -12,8 +12,9 @@ This page lists the default document essentials for this doctype.
 - Invoice.Date (1..1)
 - Invoice.Type (1..1)
 - Currency (1..1)
-- ReceiverOrder.Id (1..1)
+- ReceiverOrder.Id (1..*)
 - ReceiverOrder.Date (0..1)
+- DeliveryNote.Id (0..1)
 - Sender.VatId (1..1)
 - Receiver.VatId (0..1)
 - Sender.TaxId (0..1)
@@ -28,9 +29,21 @@ This page lists the default document essentials for this doctype.
   - Vat.Rate
   - Net.Amount
   - Vat.Amount
-- Payment.Discount.Item (0..1)
-  - Due.Item
+- Due.Item (0..*)
+  - Due.Date
+  - Due.Duration
+- Payment.Discount.Item (0..*)
+  - Due.Item (0..*)
+    - Due.Date
+    - Due.Duration
   - Discount.Item
+    - Discount.Rate
+    - Discount.Amount
+- DeliveryDate.Item (0..*)
+  - Delivery.Date
+  - Delivery.Week
+  - DeliveryPeriodStart.Date
+  - DeliveryPeriodEnd.Date
 - Line.Item (1..*)
   - Position.Id
   - Article.Id
@@ -40,12 +53,18 @@ This page lists the default document essentials for this doctype.
   - Unit.SmallAmount
   - Total.Amount
   - Order.Id
-  - DeliveryNote.Id
+  - DeliveryNote.Id (0..1)
   - Unit.Type
   - Vat.Rate
   - Article.Type
-  - DeliveryDate.Item
+  - DeliveryDate.Item (0..*)
+    - Delivery.Date
+    - Delivery.Week
+    - DeliveryPeriodStart.Date
+    - DeliveryPeriodEnd.Date
   - Discount.Item
+    - Discount.Rate
+    - Discount.Amount
 - BankAccount.Item (1..*)
   - Bank.Iban
   - Bank.Bic

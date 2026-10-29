@@ -11,7 +11,7 @@ This page lists the default document essentials for this doctype.
 - DeliveryNote.Date (1..1)
 - Sender.VatId (0..1)
 - Sender.Id (0..1)
-- ReceiverOrder.Id (0..1)
+- ReceiverOrder.Id (0..*)
 - BankAccount.Item (0..*)
   - Bank.Iban
   - Bank.Bic

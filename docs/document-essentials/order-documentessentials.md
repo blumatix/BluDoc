@@ -12,6 +12,11 @@ This page lists the default document essentials for this doctype.
 - Sender.Id (0..1)
 - Receiver.Id (0..1)
 - Sender.VatId (0..1)
+- DeliveryDate.Item (0..*)
+  - Delivery.Date
+  - Delivery.Week
+  - DeliveryPeriodStart.Date
+  - DeliveryPeriodEnd.Date
 - Delivery.Contact.Item (0..1)
   - Contact.Name
   - Attention.Name
@@ -50,7 +55,11 @@ This page lists the default document essentials for this doctype.
   - Contact.Fax
 - Line.Item (1..*)
   - Article.Id
-  - DeliveryDate.Item
+  - DeliveryDate.Item (0..*)
+    - Delivery.Date
+    - Delivery.Week
+    - DeliveryPeriodStart.Date
+    - DeliveryPeriodEnd.Date
   - Quantity.Decimal
   - ReceiverArticle.Id
   - Unit.SmallAmount

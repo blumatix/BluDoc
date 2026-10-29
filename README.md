@@ -5,6 +5,7 @@ Use the schema files and samples in this repo to validate and explore BluDoc.
 
 ## Samples
 - [classification](samples/classification)
+- [einvoice](samples/einvoice)
 - [invoice](samples/invoice)
 - [order](samples/order)
 - [orderconfirmation](samples/orderconfirmation)

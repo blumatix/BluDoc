@@ -12,6 +12,11 @@ This page lists the default document essentials for this doctype.
 - Currency (0..1)
 - ReceiverOrder.Id (0..1)
 - SenderOrder.Id (0..1)
+- DeliveryDate.Item (0..*)
+  - Delivery.Date
+  - Delivery.Week
+  - DeliveryPeriodStart.Date
+  - DeliveryPeriodEnd.Date
 - Surcharge.Item (0..*)
   - Surcharge.Type
   - Surcharge.Rate
@@ -76,10 +81,13 @@ This page lists the default document essentials for this doctype.
   - Contact.Email
   - Contact.Phone
   - Contact.Fax
+- Discount.Item (0..*)
+  - Discount.Rate
+  - Discount.Amount
 - Line.Item (1..*)
   - Position.Id
   - Article.Id
-  - Article.Description.String
+  - ArticleDescription.String
   - Article.Type
   - Quantity.Decimal
   - Unit.SmallAmount
@@ -88,5 +96,11 @@ This page lists the default document essentials for this doctype.
   - DeliveryNote.Id
   - Unit.Type
   - Vat.Rate
-  - DeliveryDate.Item
-  - Discount.Item
+  - DeliveryDate.Item (0..*)
+    - Delivery.Date
+    - Delivery.Week
+    - DeliveryPeriodStart.Date
+    - DeliveryPeriodEnd.Date
+  - Discount.Item (0..*)
+    - Discount.Rate
+    - Discount.Amount

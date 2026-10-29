@@ -12,9 +12,11 @@ This page lists the default document essentials for this doctype.
 - ConstructionSite.String (0..1)
 - Customer.Name (0..1)
 - Signature.Bool (0..1)
+- Total.Duration (0..1)
+- Info.String (0..1)
 - WorkDay.Item (1..*)
   - Date
   - Start.Time
   - End.Time
-  - Total.Duration
-  - Info.String
+  - Total.Duration (0..1)
+  - Info.String (0..1)

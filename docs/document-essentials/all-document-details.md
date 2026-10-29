@@ -14,6 +14,7 @@ Complete list of all document details that can appear in a BluDoc. Items are str
 - BankStatement.Date
 - Balance.Amount
 - Tour.Id
+- HAWB.Id
 - Sender.VatId
 - Receiver.VatId
 - Sender.TaxId
@@ -48,6 +49,12 @@ Complete list of all document details that can appear in a BluDoc. Items are str
   - Base.Currency
   - Target.Currency
   - ExchangeRate.Decimal
+- Due.Item
+  - Due.Date
+  - Due.Duration
+- Discount.Item
+  - Discount.Rate
+  - Discount.Amount
 - Payment.Discount.Item
   - Due.Item
     - Due.Date
@@ -55,7 +62,14 @@ Complete list of all document details that can appear in a BluDoc. Items are str
   - Discount.Item
     - Discount.Rate
     - Discount.Amount
+- DeliveryDate.Item
+  - Delivery.Date
+  - Delivery.Week
+  - DeliveryPeriodStart.Date
+  - DeliveryPeriodEnd.Date
 - Shipping.Date
+- NetTotal.Amount
+- GrossTotal.Amount
 - Order.Date
 - Line.Item
   - Position.Id
